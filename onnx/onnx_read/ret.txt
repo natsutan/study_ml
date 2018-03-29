@@ -1,0 +1,2552 @@
+['ByteSize', 'Clear', 'ClearExtension', 'ClearField', 'CopyFrom', 'DESCRIPTOR', 'DOC_STRING_FIELD_NUMBER', 'DiscardUnknownFields', 'Extensions', 'FindInitializationErrors', 'FromString', 'HasExtension', 'HasField', 'INITIALIZER_FIELD_NUMBER', 'INPUT_FIELD_NUMBER', 'IsInitialized', 'ListFields', 'MergeFrom', 'MergeFromString', 'NAME_FIELD_NUMBER', 'NODE_FIELD_NUMBER', 'OUTPUT_FIELD_NUMBER', 'ParseFromString', 'RegisterExtension', 'SerializePartialToString', 'SerializeToString', 'SetInParent', 'VALUE_INFO_FIELD_NUMBER', 'WhichOneof', '_CheckCalledFromGeneratedFile', '_SetListener', '__class__', '__deepcopy__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__unicode__', '_extensions_by_name', '_extensions_by_number']
+0   input: "1"
+input: "2"
+output: "55"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 2
+  ints: 2
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+1   input: "55"
+input: "3"
+output: "56"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+2   input: "56"
+output: "57"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+3   input: "57"
+output: "58"
+op_type: "MaxPool"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 2
+  ints: 2
+  type: INTS
+}
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py(334): max_pool2d\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/pooling.py(143): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+4   input: "58"
+input: "4"
+output: "60"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+5   input: "60"
+input: "5"
+output: "61"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+6   input: "61"
+output: "62"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+7   input: "62"
+input: "6"
+output: "64"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+8   input: "64"
+input: "7"
+output: "65"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+9   input: "65"
+output: "66"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+10   input: "62"
+input: "8"
+output: "68"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 1
+  ints: 1
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+11   input: "68"
+input: "9"
+output: "69"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+12   input: "69"
+output: "70"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+13   input: "66"
+input: "70"
+output: "71"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+14   input: "71"
+input: "10"
+output: "73"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+15   input: "73"
+input: "11"
+output: "74"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+16   input: "74"
+output: "75"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+17   input: "75"
+input: "12"
+output: "77"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+18   input: "77"
+input: "13"
+output: "78"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+19   input: "78"
+output: "79"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+20   input: "75"
+input: "14"
+output: "81"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 1
+  ints: 1
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+21   input: "81"
+input: "15"
+output: "82"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+22   input: "82"
+output: "83"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+23   input: "79"
+input: "83"
+output: "84"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+24   input: "84"
+output: "85"
+op_type: "MaxPool"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 2
+  ints: 2
+  type: INTS
+}
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py(334): max_pool2d\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/pooling.py(143): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+25   input: "85"
+input: "16"
+output: "87"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+26   input: "87"
+input: "17"
+output: "88"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+27   input: "88"
+output: "89"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+28   input: "89"
+input: "18"
+output: "91"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+29   input: "91"
+input: "19"
+output: "92"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+30   input: "92"
+output: "93"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+31   input: "89"
+input: "20"
+output: "95"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 1
+  ints: 1
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+32   input: "95"
+input: "21"
+output: "96"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+33   input: "96"
+output: "97"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+34   input: "93"
+input: "97"
+output: "98"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+35   input: "98"
+input: "22"
+output: "100"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+36   input: "100"
+input: "23"
+output: "101"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+37   input: "101"
+output: "102"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+38   input: "102"
+input: "24"
+output: "104"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+39   input: "104"
+input: "25"
+output: "105"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+40   input: "105"
+output: "106"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+41   input: "102"
+input: "26"
+output: "108"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 1
+  ints: 1
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+42   input: "108"
+input: "27"
+output: "109"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+43   input: "109"
+output: "110"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+44   input: "106"
+input: "110"
+output: "111"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+45   input: "111"
+output: "112"
+op_type: "MaxPool"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 2
+  ints: 2
+  type: INTS
+}
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py(334): max_pool2d\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/pooling.py(143): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+46   input: "112"
+input: "28"
+output: "114"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+47   input: "114"
+input: "29"
+output: "115"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+48   input: "115"
+output: "116"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+49   input: "116"
+input: "30"
+output: "118"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+50   input: "118"
+input: "31"
+output: "119"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+51   input: "119"
+output: "120"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+52   input: "116"
+input: "32"
+output: "122"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 1
+  ints: 1
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+53   input: "122"
+input: "33"
+output: "123"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+54   input: "123"
+output: "124"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+55   input: "120"
+input: "124"
+output: "125"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+56   input: "125"
+input: "34"
+output: "127"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+57   input: "127"
+input: "35"
+output: "128"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+58   input: "128"
+output: "129"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+59   input: "129"
+input: "36"
+output: "131"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+60   input: "131"
+input: "37"
+output: "132"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+61   input: "132"
+output: "133"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+62   input: "129"
+input: "38"
+output: "135"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 1
+  ints: 1
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+63   input: "135"
+input: "39"
+output: "136"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+64   input: "136"
+output: "137"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+65   input: "133"
+input: "137"
+output: "138"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+66   input: "138"
+input: "40"
+output: "140"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+67   input: "140"
+input: "41"
+output: "141"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+68   input: "141"
+output: "142"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+69   input: "142"
+input: "42"
+output: "144"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+70   input: "144"
+input: "43"
+output: "145"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+71   input: "145"
+output: "146"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+72   input: "142"
+input: "44"
+output: "148"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 1
+  ints: 1
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+73   input: "148"
+input: "45"
+output: "149"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+74   input: "149"
+output: "150"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+75   input: "146"
+input: "150"
+output: "151"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+76   input: "151"
+input: "46"
+output: "153"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+77   input: "153"
+input: "47"
+output: "154"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+78   input: "154"
+output: "155"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+79   input: "155"
+input: "48"
+output: "157"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+80   input: "157"
+input: "49"
+output: "158"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+81   input: "158"
+output: "159"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+82   input: "155"
+input: "50"
+output: "161"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 3
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 1
+  ints: 1
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+83   input: "161"
+input: "51"
+output: "162"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+84   input: "162"
+output: "163"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+85   input: "159"
+input: "163"
+output: "164"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+86   input: "164"
+output: "166"
+output: "167"
+op_type: "Dropout"
+attribute {
+  name: "is_test"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "ratio"
+  f: 0.5
+  type: FLOAT
+}
+
+87   input: "166"
+input: "52"
+output: "169"
+op_type: "Conv"
+attribute {
+  name: "kernel_shape"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+
+88   input: "169"
+input: "53"
+output: "170"
+op_type: "Add"
+attribute {
+  name: "broadcast"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+
+89   input: "170"
+output: "171"
+op_type: "Relu"
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(105): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+90   input: "171"
+output: "172"
+op_type: "AveragePool"
+attribute {
+  name: "kernel_shape"
+  ints: 13
+  ints: 13
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 13
+  ints: 13
+  type: INTS
+}
+doc_string: "/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/pooling.py(505): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(105): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+91   input: "172"
+output: "173"
+op_type: "Reshape"
+attribute {
+  name: "shape"
+  ints: 1
+  ints: 1000
+  type: INTS
+}
+doc_string: "/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(106): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): <module>\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1072): run\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1662): main\n/home/natu/app/pycharm-community-2017.3.2/helpers/pydev/pydevd.py(1668): <module>\n"
+
+name: "1"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 224
+      }
+      dim {
+        dim_value: 224
+      }
+    }
+  }
+}
+
+name: "2"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "3"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+    }
+  }
+}
+
+name: "4"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 16
+      }
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "5"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 16
+      }
+    }
+  }
+}
+
+name: "6"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 16
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "7"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+    }
+  }
+}
+
+name: "8"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 16
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "9"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+    }
+  }
+}
+
+name: "10"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 16
+      }
+      dim {
+        dim_value: 128
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "11"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 16
+      }
+    }
+  }
+}
+
+name: "12"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 16
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "13"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+    }
+  }
+}
+
+name: "14"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 16
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "15"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+    }
+  }
+}
+
+name: "16"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 32
+      }
+      dim {
+        dim_value: 128
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "17"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 32
+      }
+    }
+  }
+}
+
+name: "18"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 128
+      }
+      dim {
+        dim_value: 32
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "19"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 128
+      }
+    }
+  }
+}
+
+name: "20"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 128
+      }
+      dim {
+        dim_value: 32
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "21"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 128
+      }
+    }
+  }
+}
+
+name: "22"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 32
+      }
+      dim {
+        dim_value: 256
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "23"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 32
+      }
+    }
+  }
+}
+
+name: "24"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 128
+      }
+      dim {
+        dim_value: 32
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "25"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 128
+      }
+    }
+  }
+}
+
+name: "26"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 128
+      }
+      dim {
+        dim_value: 32
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "27"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 128
+      }
+    }
+  }
+}
+
+name: "28"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 48
+      }
+      dim {
+        dim_value: 256
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "29"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 48
+      }
+    }
+  }
+}
+
+name: "30"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 192
+      }
+      dim {
+        dim_value: 48
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "31"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 192
+      }
+    }
+  }
+}
+
+name: "32"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 192
+      }
+      dim {
+        dim_value: 48
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "33"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 192
+      }
+    }
+  }
+}
+
+name: "34"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 48
+      }
+      dim {
+        dim_value: 384
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "35"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 48
+      }
+    }
+  }
+}
+
+name: "36"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 192
+      }
+      dim {
+        dim_value: 48
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "37"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 192
+      }
+    }
+  }
+}
+
+name: "38"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 192
+      }
+      dim {
+        dim_value: 48
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "39"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 192
+      }
+    }
+  }
+}
+
+name: "40"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 384
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "41"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+    }
+  }
+}
+
+name: "42"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 256
+      }
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "43"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 256
+      }
+    }
+  }
+}
+
+name: "44"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 256
+      }
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "45"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 256
+      }
+    }
+  }
+}
+
+name: "46"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 512
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "47"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 64
+      }
+    }
+  }
+}
+
+name: "48"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 256
+      }
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "49"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 256
+      }
+    }
+  }
+}
+
+name: "50"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 256
+      }
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 3
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+
+name: "51"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 256
+      }
+    }
+  }
+}
+
+name: "52"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 1000
+      }
+      dim {
+        dim_value: 512
+      }
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+
+name: "53"
+type {
+  tensor_type {
+    elem_type: FLOAT
+    shape {
+      dim {
+        dim_value: 1000
+      }
+    }
+  }
+}
+
+dims: 64
+dims: 3
+dims: 3
+dims: 3
+data_type: FLOAT
+name: "2"
+raw_data: "\322\261\367=;N6>l\326\202\27467\212>p \256>\356{\235=\006}\n>%y\">\302i\363\274\333\360\241\276\320z\264\276\010\302r\276\363\005\322\276\271\203\336\276\252\342\225\276\351i\256\276\270O\272\276C\311r\276D\340(>\032C/>\242\031v>\177\035\033>\324\364\276=\234\246K>\356\323v>R=N>T\326\220>\220^\257>t=\377\275\031\304\033=\033rp\276\023Hc=f0t>X_\203<\363}\254=*\201\301\276\262\037\203=1\313\314\276\312\006\217\275\r9\365\276\241J\347=-\205\353>\252I+>\351\343\274>\210\351\212\276!\261Z=\rQ\201\276\206\016E\275\013G\231\276*%\365=\315\023\216>\354\356\032>Sq\217>BIz\276}\257\242\275(\212\267\276aC\263\276\341\036\311>\0369\025?\037o\217>\267_\230\276\307\2573\276\013#?;\345Z\032\276JY\001\277s\354\013\2772\223\023?fna?J\027\341>&7\326\276p\325t\276\211o\362\274IM_\275iWP\276\212v2\276\033\257c>(\360\305>\344>/>\313\315Y\276\316J\361\275\224\034\214\274f\232\350>\276\241\303>\300\362\372>\332\233\332=\010\327\361=s\311\220=\277\231\r\277\3230\004\277N\224\006\277^o\010?7\240\370>\367\231\025?^\313\343=G\007\357=\031\262\200=\312\277%\277\252\274#\277\206\326#\277(\376\027>\210\014\347=>\265P>\252\306~=\031\267\230=\260\256\275<y\330b\276*g9\276x\244a\276\t\272\255=\256\341\241>\224\017\316\276{\271\306\276@\244w<P9\302>\270\013\260>\t\t\247\276\316\224\203;\306\335\260=\235K\330>\311\231\351\276\004y\022\2770\253\205;Q\230\r?\216\262\334>\254\003\343\276\201\313\221\275\335\246.=\356\362y>\363\321\272\276\002\243\232\276ns@=\346\016\255> \365\232>\277<\204\276_\035\006\275g\327\022>\366x6=\227v\'\275\245,\325\275\013\360A\276\272@\207\276.\350{\276F\003z\2768\266\221\276\rf\244>o\375\223>\251\216\211>\330\207^>\324\2354>\010N\024>[\371\241=\037,\253=\2205\371<i\234\022>\306M\365=d\341\034>\255\016h\275\331\356\253\275\302\264\230\275\344\'A\276\007\343@\276\201\324d\276trW\275\375\253\242\276h\306E<X}\317\276H\224\246\276/:^>\215n1=\345>\274>>\010\000?_\025$\276\252\236\362\276e\255\034\275\344\026\013\277\370\024\312\276~\223\235>\322Z\207=\203\250\003??\0341?XU\233=\023L\027\276\036R\301\273\330\353S\276\206\371e\276<\3716=\203\233\037=\222\361=>.ga>b25\275\213\270\216\275\356\276\002\276(%\026\276\r\247;\276\323\3474\276\\qn\276d\tp\276E\324\316\275*d\355=:\362O>\317(\260=X\271l>\023Z\215>\336D,>\220\245\000>\202\n\033>c\346\335=AF\205\276\300@\n\276\234q\311\275\344D\324\275t\310\317<\357/j=x\266;\273^\274\341=\034(\005>@0\304=\311\034\t>\003\031\226\276\006\255?\276\324B\027?\302\245u\276\311\334\312\276\267\035O>\311\224\313=\030\364V>q\214.>\330\311\034\277\275\343\347\275k\200`?s\330\277\276*\237\373\276\207\324\252>\230\243\237=\257\222\223=\200q\"=\235\243T\276\'-\260\275\240)\342>X\001I\276\243nH\276J\330\373=\202\267\360<tP0\273\r\356\254>\363V\246\276[E)\276 I\272>\254\272\372\275\014:0\276\367\315\037>\302\317M\275V\230\210\276B\337\000?\254\325\205\275<\351\007\277\033\220\374><+3>\347N\014\277S,\353=\233\303\034>\233\251O\276Ek\226>\260f\366\274\026_\251\276\363w\232>~`\001>\263Z\247\276\203\320\244=d3\302=\257s\204>\335\204\201>*\252\231=\036\370\333\276\333I\027\277I\362\323\276\220\360\">\350\034\255>\263I\264>\215;\275>\366\257\244>\0002\365=7\024\023\277\236\351L\277C\'\r\277\337\316T>\005i\344>\224\315\351>~\254\010>o\311\021>3Pc=\206\346Z\276\005\313\222\276\317^]\276\007\277^=\006k?>\004N\026>IV\246=\331&\263=\224\004\275=\325F\300=\313W\363=\"\317\001>#\336\303=N\200\363=D\n\367=\026\206\360\275\277C\363\275\337\355\005\276c\325\335\275Pj\363\275K\210\377\2750\302\317\275`$\371\275z*\n\276\000S3<\370\023\240<v\357\233;\271\266\216<\032C\211<@\347*<\330\001\207<dm\t<\213\334\000:\027L!=\241l\022\276\323\216\001\276\006-z\275\222\301q\276=\3054\276\343L5\274x\355\365\275p\276\227\275\033(h\273\020\345\353\274\177\306&\275\253\215\021\275\250\207\221\275?\016\220\275l\340\227\275\274A\321\275\226\252\377\275%\342\321<.\257^>%w8>\233\201\">\317\034\252>\265\312\215>l\230\271=\235~m>\rL&>\337\362\371>\177\244\335>\343U\035>\230R\256>\245b\027\275l\305\244\276\031\031\t\276s:\334\276\021\310\360\276/\245\270\275\2566\227\275\244>\354\273:v\231\275\013\336\367\274cn?=a\254\023\274\\5\270=w3\276=\376\310\257\276\273\272\232\276\372\255\013\276\316}Z\276m\347@=\353\372j>\325\'\223=\236\310\265>^\305\250>\202Y\252\276j\000%>\210\023=>r`\333>VzI<\235\033\340\276\327V\014\276J\2747\276Z\356\251>\026]\347\276\340\tO>\347\005m>\342\002(?%$\005=Y\255$\277\254,e\276\305\263\200\276\222K\316>{Y\252\276\306\204\367=\r\242\013>o\357\331>\202?D=\324\207\310\276\344v\t\276Q\210#\276d\027\224>\031\254$\276\216\214\n=l?\232>\310\031x=r\237\024\277\033wh>\241\177\250>6>\355\275d8\027\276\343\240\220\276;\205@<\305\331\013?\312y\336<\345\253J\277\352\266[>|\306\001?\322\312\022\2767\211n\276\333\314\303\275\375#\255=\030\217\331=\356a\225=\363_\235\276\363\272\024>\3629\364=5\370\263:\230\234\311\275\327E\233=\336\3408>3uY=\362p\316=\341\r\311=4(\227\2753]\307\274\246\024\325\275+\202D\276$\352^=\217H\356=@\017^\274\271 K=\010\3038\272\ra \276\350G{\275\022\352\031\276\301\3579\276}\240Y\276\275\362\n\276D0\024\276\313K\376\275\032\244\207\275\234\322\305\275\273N\005\276\327\376V\275.`9\274k\312\021\277J\023\272\276\215!\002\276.\224-<\223D\267>\240s\251>\332;8>6\021i>\263\332E<0,@\277\316\250\374\276\210\023\024\276\021\357P\274\322\303\325>t\301\324>I\251F>\267q\233>\247v\234=\275\254\237\276\314n;\276\270uQ\275\313\362o=i\246\203>\235\342K>Z\266\303<3\231x=c+z\275i\257\231>79\207>%\205\025=?R\203>1AD\275\216\262\222\276+?\031;`{\204\276\365\324p\276\277\302\036?\033v\005?\360O\020>?\245\275>\360R\241\275f\254\350\276\230\327\020\276\005P\007\277\224\217\006\277=\031\226>\007\275M>\"\357B=\213m.>\326\300x\275~l[\276\322\216\021\275\252-I\276D\002C\276\350\345\243\276\335\225c>\371*\007?Ac\005\277\270V1\275\346\023\004?\003\365\340\276\375\312\202\276\035\356\255>\003\276\264\27626C>n\317\n?\206\241\022\277\3407\241\275x\237\014?\255\227\271\276\305\235\203\276\226\023\234>\235\254\014\271\016\327\241<C\252\016<\324\202\204\275:r\213\275\230\221\r=\035&\000>\213T\214\275T\223\322\2730\374U>z\342\301>n\223\325>\254\344\326\276OJ\005\277\2458\226\276G\016D>\017\000~=\224\2462\275\333\306\214>\377\023\003?M\356\024?R\034\010\277\'y.\277\202\333\307\276N\177a>\203\325\002=\256\005\207\275\214\n\240=\310\225D>\007\227=>\364\361j\276\006\311\232\276\224*?\276\223\261>>v\231\220=o\370\264<\034\310\364>b\275\n>\261\"\306\276\204\364\347>\310\001\025\276\233\327\317\276\250\024\253>\311.\252\276 r\213\276<\234\236=vC\210=8\356\227\275\313\355\313=\r\342\271\275rS.\275\nh\351<\236\241T\276a\216D=?I\237\276D8:\274\311\2467>\212\023Z\276n`\373<]\272\211>#?1\276I6\266\274\362\225w>u\366\021>\325\376\307\276/\023\241>iB(>8\311\317\275\365\262\177\275\307\313\262\276xt\373>C\201D\276(\336&>Oc\027\277\t\032\301>\256\206\232>y\363\336\275\271ww\276q\255\310\276\330h=?\315\272\214\276\302\333\314=V\274\256\276Ag\205>\250O\034>\331\275\355\274\247q\273\275\203u\253\276\364/\366>\331cD\276K\035]\276\302\266\252\275[\244\244>\346\027*\276\211\212\225\275.Gg>\363\371\233\276o\212\217:LF\272>\255\035\316\276\031\244\364\275a\352\003?\326_\325\2767\030\313\275\375\253\346>\'A\013\277\366j\374\274\313\362\r?\"\024N\276\370\020\350\275\262\032\263>\311\333I\276\210\312\260\2752B\215>mJ\261\2767\363\276\274\310\247\306>{\002V=\264G\202<\325c\233\272\030\t\361<U\201\3018\256\342Z<\025y\025=\243\036\032=s\333\275<\031)(\276U+t\276\205nE\276\323<E\276T\202\217\276@4e\276Y\006\004\276\2024?\276\314\225(\276k\200+>\311\010\020>E\303D>\351\024\r>\2725\354=\336\3343>\263\022\036>\031\030\022>\"\304*>e\006\006\274a\344\366\276n*4\277\357\020\365>4\321\302<c0\331\276\227\005.?F\034\006?\315\232\255=D\374\277\273+\321\275=NJA>\212\342\366\275\3443k\275\354\366b=3\0100\276\224\272%\276\376\256\273\275_\363o\272\233\313\273>pc\007?z\036\251\276_\360\274<\265\376\265>\263\371\376\276\2453\253\276\261\221\231;n\207Z=o\214Y\275\'T:\275\215\347\000\276E\211N\276\212\246E\276\034\0271\276\257o\032\276\373Tj\276\355\023\225=\345j\264<\032\332\250=\006\225\265\275\006\024\035\276d\255\354\275\277w\n\276\371x\332\275\350p<\276\355o\030>G\\\'>\210\265z>\326\255\034>7\347\'>\227\371k>\352/#>\233\360v>\201\214U>\370\217\236\276\2724\264>\021\364t\275g5\221\276\353\275!?:\276\232\276\242<\016\275\261\332\300>\004\263\275\276\370\326\366\276Jv\004?\266\005\301\275\327\341\272\276\026\177n?^\270\327\276\236\230/\275\006\037\010?M\017\020\277W\370F\276\220\356U>\363/#\275\252\316I\2769\r\334>\000\022C\276\350CC\275yhl>DmI\276\003\000\225>\210\367H>Jk\021\275_[<>\337d\006\277j\3121\276\350\264`\275fck\276\311P\300>\034\261\023?\034-\225>N\240\326\275B\017\177>\036}5\277ur\254\276\342[\353\275e\230\256\276\246I\324>\006\241\007>\377\374\372=\212m\"\275\002k#>\314\\\262\276W\365\003\276\023\351\304;\215\216\366\275q\323i>\232\2244>\257\310\334\276\200\372s>\0365L>1k\t\277}\355\271>\214\354\244=E\003\340\276\224t\265>\204\376\245>\320\272\023\277\365N\207>\237\252\212>\240*I\277T\\\365>\207L\343=x=\023\277\362[\361>\\S\017>\243<}\276\260\264\260=\177\225\030>\221\010\233\276\315\242J>\250\003\270=\277\225z\276<,\021>\371\342\'\276G~\n\276!3F=Y\365:\276Vb\033\276?\360\333\274\324V\241<\013\257m\275\000=5=\037%R\276\204?e\276@O\376\274\177wL\276\025ZG\276\260\372\201\275)\263\024={\017&\275\331\024\213=\037r\323\274\361\000Z\275\213+c=\333*\327\275\331\366\324\275\344P\013\274\"6\336<O5;\275g\213D=\223Z\274\276\231\212\322\276b8\002\277\026KX=\305\303\251\273\030:\017\275E\r\336>\2704\311>\251\362\363>dJ\022\277Ys%\277s\2435\277\016I\213=\251a\307<3\030\n<\2120\025?\256J\031? \035.?&\363\203\276,\333]\276&\255\235\276\3360\226\274\241\342:\274z\216\010\273\322Mx>\320XX>\311=\235>\240V\345>\252P\351=\341\246\320\276\013U\233>\030\300i=\225\353\320\2765\007\257>\204$\267=\336\025\356\276\361\303/?\302\241\252=\321\202>\277=)\035?U\013\213=d\207?\277\243J\"?q\252\371=\232Q<\277w\241\265>\2506\036=\343i\314\27660w>D*\363<\376*\254\276\247\021\236>Y\253\262=\236\'\262\276\355@\333\276R\352y\275\323\206A>\n\337\261\276\000\325\216>\036\377N>_\262\t\276\324\023\243>\013o\225<n\3316\277\367^\r\276\265\021\237>\214\256\022\277\027\002\260>;q\326>\277\266x\276vO\324>\375|1>\te\232\276>\030T\2759\370\302=U\037s\276\260\200\\>\315\344\016>y\361\306\275X\276d>\312\216F<4a\344\276\036\243\346\276\346\237\252\276\241\025Z\276xc,\274\237\353<>)1\315>\207\013\350>\261\346\324>\222O)=\335\212\r=\336\350\027=\332\372\204\275\020%\335\272c\006\002=\23704\274\233+\233\274\367\356B\275\020`\336>\373\367\321>\242\301p>\322.\357=\030\360/\272\021\014\032\276k?\223\276P\026\305\276\005\351\277\276oU.=\214\361\236>G\021\215>\025\201\221>\351\322\007?\363\375\320>\361\220k>\302\013\331>\261\335\211>\330\2216\276:\244\212\276I\277b\276\212\030\204\276\004\345\245\276\306\215\214\276\"\332\213\276\357\313\242\276AD{\276v\254\027>\2265S\2758\365\016;\267UU\275\361\336W\276x\276\364\275[\307r\274n\363\344\2751\204\321\273\272\315\302>\276\266\023\276\340.\354\275\351\342\262\275Z\301\330\276\202J\022>\n\257\372\275W\335\357=e\340I>\017\271\312>VGu\276&\2355\276\030\333^\276K\026\005\277W\200Z>\306\023<\276\370\216A>\233\304\257>\036\314H>A\222\234\275\017\270_\275\261$S\275\\\266P\276>z\035>\272\263\262\275\177\335\373=\223~\010=\371\345T>\271)F>4\017\225\273\364QJ>R=\n\274\215sS\276\000\002\017\275\327&?\276\3060_\276\332\030\222>\022dY>\363M\363\274c*\223>\2663\3549^\322p\276\275\343\007=\243\267=\276A\256\201\276n&->\374j\354=\242}\035\275\322x8>\321\025\362\274[^,\276\255\215J<\"+\010\276[\357\t\276\322\226\276\276\3707l\276\357\236\266<\252\026\202>\217\205\037?\027\354\216>\224n\346<\224wc\276\334\251\275\276x\276\367\276\342.i\276\217\205\304=\250\357\330>P\220e?\215\346\312>\234e\001\275\324\277\311\276\300\365&\277\233*R\276\343\222\021\276\021a<<\036-)>\255+\321>\353K!>F&`<\374\314)\276\236rg\276\277\034\004\276\244Tc\276\201\355a\276\340k\026\276\t<A\276Kq\014\276E\014\205=\nJ\350=\005\356\035>\207nS=\275X)\274[\345\243\273\027\251\247\274\356Z;\275\010QA<\374\372\252=Cs\014>;TL>g\302\300=N\202\332=\257\320\357=\261x!\274\t\362\020<\321\353\213=`\021\020\275\336\330\304;\330>\255=q:O<\331Y\223\276\n\2758\276O\031\247>\274\2338>S\024(\276)\002}\275/\0034>\016\356M<\312\365\3629\274\233\021\277\201\300\035\277\252F ?CK\201>y\354\312\2765\335\221>4}\327>\225X\343<\227%\344\273\335\220\253\276\376\236\270\276\263\372\300>\250\376;>\254\n^\276GP\032>\367\005c>\370\031\303\274\274\323O>s\274\200\276\245\001?\277<\256\005?IJ\330=s@+\277<a\023?\022\201\357>\300\247R\276\005\300v=\227\350^\274\361\257\207\276\014\345G>)\307\341=\177\255\263\276\022\272\005>Spt>_=\003\276\305R\341\275\232\305\037>\376.z> \027\007\276\027>i=3. =\225\317|\276\324\2714<\263Q\003=+v\020>.\330\221=ag\325=qh\256=->\214\275\213\231e<\205\257\033>P\007\334;\347R\274=k#\324=B\3545=\177\320\260=\024\317\203=se3\275\205]\376<\336\203\231=V\016T\275\257w\206=\353\217;<\221\245\200\275BQ\311<\230\004\036\276;\365\216\276Oo\020\276\325\"R\276\221\233\251\276\030D\020\276\323en==j\350<\037J\260=\351\272O>mE >\025\276\003>1]k>\235co>\366-\303=\241\317\032>A\271\221=\377\223\250=\001\r\351\275\313\2236\276\2748I\276\235\333\247\276\244\244\241\276\'\343\263\276\342+\251>\266\277z>\306\242m>\360k\273<\363\320\372\274\317n\220\275\320C\212\276\023\236S\276\232\362q\276\317v\'\275\032\314@={\371\033>\310?\314\274\304\364%>\205\370\230>[\r\201\275\253!\032=<\375\256=9\032\000\275\221\263I\274\027\026N=-N\253\274a\235\323=`\007G>%\2761\275\026\317\007\275\202D\037\275\n\256\217\275Z\324\341<w\231\t=\351\375\215<\233\274^>\302\200k>6&{;\001\007L<\306\376\242\275\025\306\267=S\355\303>e\027\223><\263\370\274\261\023\021\275\257_C\275C\261\357\273\267\006\265\275\352QQ\275#c!=\006/\275>X\377\203>\253\203;\275\241\005\373\274\240\017\\\275\243\024]<\\\035w\275d\342\023\275\033\026\257\275\r\270\202>\256\363(>\363\325\347\275\306\n\271\275\310Q\325\275\307\235\245<`c+\275\207\362\320\2743M^\276\321\370\\\276\2672L\273\212F`\276\037\227u\276\213\277\235\275\207\215s\276iUX\276:\200\331\275\320D\207=\230<\356=_\317\211>8\277\013>$\301$>\272*\214>\014R\327=\265z+>\217cp>)\356\335\275\2207\037\273\267\307I>\231~?\275\362\217\200\274\027f\343=\236\037\221\275\337\204\r\275\231\345\036=\340zq=,\367\237=\303^\201\276\023\255(=\'\340\350>$3\310>\263\257\300\276\322\204\243\276^\227N\275\002\256\033>\'\363p>\337N\025\276\030\264e<@\360\020?F\200\010?D\034 \277\204\000\013\277\227\007-\276\376\006\207<B\373\004=\360\2616\276\343\036s=\361\205\242>\217\317\202>\236\314k\276~\231k\276\204\201(\275xZ2<\026\265$\276\304\253\204\276\256\212S>5\253\340<3bC\276$\267t>\205\205\351=\372ss\275&\254U<2\263R\276\311k\231\276&\027\210>\315\021\247<\202\340d\276\357\350\255>\353\3333>\365G8\275\241\021\271:]\334\021\276\265\231\007\276\203~\031>\332\242/\274N\312\333\275\202\215J>?\207\315=p-\237<\216\271\255>U\036\366\276&\371\372=.=\330>\3421\005\277\330I{:t\306\344>\305\221\215\276\243\337\220\275W\256\237>\347X\r\277\223\332R>W\303\366>\253\267\035\277d\237\365<\271U\364>\030\001\246\276\303-\034\275Y\230\253=\021\327\210\276E\021?>m\022$>\345\216\221\276rl\232=\025I\006>DH\021\276\205\340\213=zh\363<\243N9>5\344S>F\301\210\275[Sd=B\331\200>6\363\021\274\345\320\034=\216>4>\nE\261\273\031\231E\276\320\266\202\276\315i\210=E\221f\276yzv\276\264\301\200>\002 \306\275,\016`\276\372Z\037>VG\364\275\1770\243\276\246b\225>~\334\254\275n\000y\276\214\032\003?sm\266=TRD\276\261\252\346\276\334\375I\2762\010\261>2\374\342\276;/\307\274\306\023\347>{\301\221\276\276dR>\221\241\304>\347\312\027>&\\3=\344j\341\275\007@\347=r\235\267\274/\327\300\275\007\374\211=\3418\323\274\023\t\341\275+\256\312>\343\010)>\246\273\236\276\372\030\300>\220\356U<\020\365\262\276{\006h>?\272!\276\212\372\266\276SD\261=\025\213\255=\215:\205=\016\210\331=\233\211\r>\232\201\355=]\277\271=I\253\341=\343L\245=\361C\035\275\243E2\274p\357\033\275y\374);Fo\376=\340\240\336=M\344&\275\273g\220=G\\T=\016\251D\275\247\204\037\275\006\371n\275?E;\275\025\276\267=H\306\252=\026\342\355\275\317\201k<@\034c<`nT\276r\264\260>\3653\364\274g\301\241>\326l\262>n\202t\2769\005\302=\205\273\212\276\017-\225\276\364\002O\275\224\277\002?\205\317\237\275w\'\005?qN\323>\213N\351\276\313\241\n>\\m\330\276\345\023\016\277\020\251\037\276}\274b>(*~\275y\014x>\005\224\210>J\2274\276F5h=\017\310L\276\363RI\276\n\307\016\276)QI\276\213\357Z\276\332\261\364\275G\314\206\276\352LP\276\261\306\367;t\333e\276=\345Z\276\247\234A>\336\245\373=\254\000\242<r\210\227>\363j\007>\367\243\337=S.\325>@\372C>\350\315\346=\361\304\336\273tH\251\275\224\2560\276`\350\373=\026\003q\275\330B\322\275\343,\230>\265A\272<\337^\345\275Q\332\004\276\227\374.=</(\274\205~,\274\265\272K>\216\253\274=\200\346\216\275\334\337\254=3gj\275\215p\374=\242\351{>l\244\211>(\365E>\242\227\305>\030\261\305>\010\031>>K\273\236>\324\024\225>\270\330\321<\202C\236\276\032Gu\276\2705S\276\305l\014\277\304\224\343\276T\260\r\276V\341\276\276|\210\210\276\001i\030\2760w\234=_\277\213>\3543\261\276\2344\026\275\333\275\264>\201Pl\276@\t\t\2761\236\010>15\375\275w:\346=\242(\206>He\231\276Ls\241:\253\361\251>R\334h\276\n\214\323\275]\265*>F\360\317\275\245A\210=D\312/>\240,r\276~\331^\275\201?H>\367\024\016\276P\213\327\275\251\310\356=\306YX\275\332\005/\276\235:\207\276U\211\266<\250\027\235\275Pmi\276\334f\n<e\356$\274\365\375\010\2760\0053>vM\370=\324\315\311\273\353.\237>\233U\221>\204|\022>[\310\231>\231\317\262>8\010}>\303\307\017\276\311\360\211=\365O\242>\211\256\264\276\326*U\276\301\231\260=\025\320\301\276\322\322\257\276\322\364\000\276A\177\374<\353z\207>\353\034\023>j\326\213\276\027p\025\276\341\303n>\370I\002=\327^\215\276\363=\177<\364\243+=}\017\000?\2313\370>\365\307\372\2763a8\276+\372\323>\235cn\276\343^\005\277\352*\215\275\031b\301<\203\374\203>\376\346^>\304f\205\276f\301\323\275\304\204g>t\363\244\275x/\212\276x\350\332\273\306\t\355\274r\321%\275\032\273\310;2\352\224<^\037\262\273gz\305\266\217Sz>\315\212\036>l~\254<w[\244<\354-;<\020)X=}z\244=\377\3101=\334\274\016=\335\233\255>\350kn>C\006\216=\314\3725\274\360\205\311\274\363p\225\274t\036x=O\372\2339\001\367\205\275\010\373t>\270M\330=w/\273\275B\323\233\275\"\342\026\276+\337\216>Y\r\335<\010\026\000\277\262\321\340\276yz\303>\261Z\276>_h\251=\206U@\276\024O\232\276\317S>>\331W\255=\025\321\025\277\255\357\026\277\276\220\037?i\027\020?\222,->\350:\005\275\255\301S\275\276hR>\376X><\363y\220\2769\035}\276\346\226\032>\010\232R>\017G\032=\232\032\237=\215\302\000?\351\373\021?\212h\314\276\021.\027\275_\352\326>\237\341\031\277[\360\003\277\344a\324\2755Y\341\274\240\203\357\274\256\031^\275\3309M=\210\342\324\273\367\370,\275b\276l=e\304\245=\255\364E\274T\324\023\276$m\343\276X\324\001\277\r;\271>\234<\236:\364\335\302\276\366\276\017?D&\364>b\271l\273\017\265\204\274WP\n\276\217\013\260\275\002;\332\275\333\201\n\276\247\340\r\276\343\274N\275\235\226\232\275\255\r\025\275\362\016\014:*\373\351\275\272\023\204\275\213\227\017\276\225\355<\276\2248D\276\223e\355\275\240\214\"\276xg\357\275\253\034.>\332F\371=\034\213\'><\036C\274v\346\356\274\271\201\023\275\205Q\237\275L7\357\275\245\231\223\275|Df;N\225\200\275\0057\332\275\256\237\036>\242\014\220=\236E\r\275\227\022=>\367\203\350=\235Z\035;v)\210\275#t^\276\205\236\226\276\312\371\n>\345\010\322\274!(7\276\025OL>\371\277\233=\032P\206\275\333\330v\275\013\224\371\275R\016\017\276\013-\024\275\362J\315\275o\032\026\276\253\272\032\275\340c\316\275\242\020\017\276"
+
+6912
+finished

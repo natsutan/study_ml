@@ -1,0 +1,2053 @@
+digraph "torch-jit-export" {
+	graph [bb="0,0,14882,718",
+		rankdir=LR
+	];
+	node [label="\N"];
+	"Conv (op#0)\n input0 1\n input1 2\n output0 55"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="133,45",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	550	 [height=0.5,
+		label=55,
+		pos="239,45",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#0)\n input0 1\n input1 2\n output0 55" -> 550	 [pos="e,211.7,45 176,45 184.48,45 193.34,45 201.61,45"];
+	10	 [height=0.5,
+		label=1,
+		pos="27,72",
+		shape=octagon,
+		width=0.75];
+	10 -> "Conv (op#0)\n input0 1\n input1 2\n output0 55"	 [pos="e,89.98,55.909 54.244,65.187 62.198,63.122 71.228,60.777 80.248,58.436"];
+	20	 [height=0.5,
+		label=2,
+		pos="27,18",
+		shape=octagon,
+		width=0.75];
+	20 -> "Conv (op#0)\n input0 1\n input1 2\n output0 55"	 [pos="e,89.98,34.091 54.244,24.813 62.198,26.878 71.228,29.223 80.248,31.564"];
+	"Add (op#1)\n input0 55\n input1 3\n output0 56"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="342,72",
+		shape=box,
+		style=filled,
+		width=1.1111];
+	550 -> "Add (op#1)\n input0 55\n input1 3\n output0 56"	 [pos="e,301.73,61.503 266.01,51.953 273.99,54.087 283.05,56.51 292.05,58.914"];
+	560	 [height=0.5,
+		label=56,
+		pos="445,72",
+		shape=octagon,
+		width=0.75];
+	"Add (op#1)\n input0 55\n input1 3\n output0 56" -> 560	 [pos="e,417.85,72 382.05,72 390.48,72 399.36,72 407.68,72"];
+	30	 [height=0.5,
+		label=3,
+		pos="239,99",
+		shape=octagon,
+		width=0.75];
+	30 -> "Add (op#1)\n input0 55\n input1 3\n output0 56"	 [pos="e,301.73,82.497 266.01,92.047 273.99,89.913 283.05,87.49 292.05,85.086"];
+	"Relu (op#2)\n input0 56\n output0 57"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/\
+modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/\
+module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/\
+anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/\
+jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/\
+onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="549,72",
+		shape=box,
+		style=filled,
+		width=1.1389];
+	560 -> "Relu (op#2)\n input0 56\n output0 57"	 [pos="e,507.76,72 472,72 479.81,72 488.65,72 497.48,72"];
+	570	 [height=0.5,
+		label=57,
+		pos="653,72",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#2)\n input0 56\n output0 57" -> 570	 [pos="e,625.89,72 590.02,72 598.5,72 607.4,72 615.73,72"];
+	"MaxPool (op#3)\n input0 57\n output0 58"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py(334): max_pool2d\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/pooling.py(143): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/\
+modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="769.5,72",
+		shape=box,
+		style=filled,
+		width=1.4861];
+	570 -> "MaxPool (op#3)\n input0 57\n output0 58"	 [pos="e,715.71,72 680.27,72 687.94,72 696.68,72 705.61,72"];
+	580	 [height=0.5,
+		label=58,
+		pos="886,72",
+		shape=octagon,
+		width=0.75];
+	"MaxPool (op#3)\n input0 57\n output0 58" -> 580	 [pos="e,858.96,72 823.06,72 831.72,72 840.53,72 848.69,72"];
+	"Conv (op#4)\n input0 58\n input1 4\n output0 60"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="992,99",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	580 -> "Conv (op#4)\n input0 58\n input1 4\n output0 60"	 [pos="e,948.98,88.091 913.24,78.813 921.2,80.878 930.23,83.223 939.25,85.564"];
+	600	 [height=0.5,
+		label=60,
+		pos="1098,99",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#4)\n input0 58\n input1 4\n output0 60" -> 600	 [pos="e,1070.7,99 1035,99 1043.5,99 1052.3,99 1060.6,99"];
+	40	 [height=0.5,
+		label=4,
+		pos="886,126",
+		shape=octagon,
+		width=0.75];
+	40 -> "Conv (op#4)\n input0 58\n input1 4\n output0 60"	 [pos="e,948.98,109.91 913.24,119.19 921.2,117.12 930.23,114.78 939.25,112.44"];
+	"Add (op#5)\n input0 60\n input1 5\n output0 61"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="1201,126",
+		shape=box,
+		style=filled,
+		width=1.1111];
+	600 -> "Add (op#5)\n input0 60\n input1 5\n output0 61"	 [pos="e,1160.7,115.5 1125,105.95 1133,108.09 1142.1,110.51 1151.1,112.91"];
+	610	 [height=0.5,
+		label=61,
+		pos="1304,126",
+		shape=octagon,
+		width=0.75];
+	"Add (op#5)\n input0 60\n input1 5\n output0 61" -> 610	 [pos="e,1276.8,126 1241,126 1249.5,126 1258.4,126 1266.7,126"];
+	50	 [height=0.5,
+		label=5,
+		pos="1098,153",
+		shape=octagon,
+		width=0.75];
+	50 -> "Add (op#5)\n input0 60\n input1 5\n output0 61"	 [pos="e,1160.7,136.5 1125,146.05 1133,143.91 1142.1,141.49 1151.1,139.09"];
+	"Relu (op#6)\n input0 61\n output0 62"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="1408,126",
+		shape=box,
+		style=filled,
+		width=1.1389];
+	610 -> "Relu (op#6)\n input0 61\n output0 62"	 [pos="e,1366.8,126 1331,126 1338.8,126 1347.7,126 1356.5,126"];
+	620	 [height=0.5,
+		label=62,
+		pos="1512,126",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#6)\n input0 61\n output0 62" -> 620	 [pos="e,1484.9,126 1449,126 1457.5,126 1466.4,126 1474.7,126"];
+	"Conv (op#7)\n input0 62\n input1 6\n output0 64"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="1621,59",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	620 -> "Conv (op#7)\n input0 62\n input1 6\n output0 64"	 [pos="e,1577.9,85.369 1532.6,113.71 1543,107.2 1556.3,98.881 1569.4,90.702"];
+	"Conv (op#10)\n input0 62\n input1 8\n output0 68"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="1621,207",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	620 -> "Conv (op#10)\n input0 62\n input1 8\n output0 68"	 [pos="e,1575.1,172.98 1530.7,139.38 1540.7,146.97 1553.8,156.91 1566.9,166.83"];
+	640	 [height=0.5,
+		label=64,
+		pos="1730,52",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#7)\n input0 62\n input1 6\n output0 64" -> 640	 [pos="e,1702.7,53.719 1664.3,56.233 1673.6,55.624 1683.4,54.983 1692.5,54.389"];
+	60	 [height=0.5,
+		label=6,
+		pos="1512,59",
+		shape=octagon,
+		width=0.75];
+	60 -> "Conv (op#7)\n input0 62\n input1 6\n output0 64"	 [pos="e,1577.8,59 1539.2,59 1547.8,59 1557.7,59 1567.6,59"];
+	"Add (op#8)\n input0 64\n input1 7\n output0 65"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="1836,90",
+		shape=box,
+		style=filled,
+		width=1.1111];
+	640 -> "Add (op#8)\n input0 64\n input1 7\n output0 65"	 [pos="e,1795.9,75.729 1755.1,60.813 1764.5,64.239 1775.6,68.291 1786.5,72.27"];
+	650	 [height=0.5,
+		label=65,
+		pos="1942,97",
+		shape=octagon,
+		width=0.75];
+	"Add (op#8)\n input0 64\n input1 7\n output0 65" -> 650	 [pos="e,1914.7,95.23 1876,92.626 1885.4,93.258 1895.4,93.93 1904.6,94.553"];
+	70	 [height=0.5,
+		label=7,
+		pos="1730,106",
+		shape=octagon,
+		width=0.75];
+	70 -> "Add (op#8)\n input0 64\n input1 7\n output0 65"	 [pos="e,1795.8,96.033 1757.2,101.96 1765.9,100.63 1775.8,99.1 1785.7,97.59"];
+	"Relu (op#9)\n input0 65\n output0 66"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="2049.5,99",
+		shape=box,
+		style=filled,
+		width=1.1389];
+	650 -> "Relu (op#9)\n input0 65\n output0 66"	 [pos="e,2008.3,98.239 1969.1,97.494 1978,97.663 1988.2,97.857 1998.3,98.049"];
+	660	 [height=0.5,
+		label=66,
+		pos="2157,108",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#9)\n input0 65\n output0 66" -> 660	 [pos="e,2129.9,105.78 2090.7,102.43 2100.2,103.24 2110.4,104.11 2119.8,104.91"];
+	"Concat (op#13)\n input0 66\n input1 70\n output0 71"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="2270.5,137",
+		shape=box,
+		style=filled,
+		width=1.4028];
+	660 -> "Concat (op#13)\n input0 66\n input1 70\n output0 71"	 [pos="e,2219.9,124.09 2184.1,114.8 2192,116.84 2200.9,119.17 2210,121.53"];
+	680	 [height=0.5,
+		label=68,
+		pos="1730,214",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#10)\n input0 62\n input1 8\n output0 68" -> 680	 [pos="e,1702.9,212.29 1667.1,209.95 1675.7,210.51 1684.6,211.09 1692.8,211.63"];
+	80	 [height=0.5,
+		label=8,
+		pos="1512,207",
+		shape=octagon,
+		width=0.75];
+	80 -> "Conv (op#10)\n input0 62\n input1 8\n output0 68"	 [pos="e,1574.9,207 1539.2,207 1547,207 1555.9,207 1564.8,207"];
+	"Add (op#11)\n input0 68\n input1 9\n output0 69"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="1836,176",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	680 -> "Add (op#11)\n input0 68\n input1 9\n output0 69"	 [pos="e,1792.7,191.47 1755.1,205.19 1763.5,202.13 1773.2,198.57 1783,195.01"];
+	690	 [height=0.5,
+		label=69,
+		pos="1942,175",
+		shape=octagon,
+		width=0.75];
+	"Add (op#11)\n input0 68\n input1 9\n output0 69" -> 690	 [pos="e,1914.7,175.25 1879,175.6 1887.5,175.51 1896.3,175.43 1904.6,175.35"];
+	90	 [height=0.5,
+		label=9,
+		pos="1730,160",
+		shape=octagon,
+		width=0.75];
+	90 -> "Add (op#11)\n input0 68\n input1 9\n output0 69"	 [pos="e,1793,169.54 1757.2,164.04 1765.1,165.25 1774,166.62 1783,167.99"];
+	"Relu (op#12)\n input0 69\n output0 70"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="2049.5,171",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	690 -> "Relu (op#12)\n input0 69\n output0 70"	 [pos="e,2004.7,172.66 1969.1,174.01 1976.9,173.72 1985.7,173.38 1994.6,173.04"];
+	700	 [height=0.5,
+		label=70,
+		pos="2157,166",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#12)\n input0 69\n output0 70" -> 700	 [pos="e,2129.8,167.24 2094,168.94 2102.6,168.53 2111.4,168.11 2119.7,167.72"];
+	700 -> "Concat (op#13)\n input0 66\n input1 70\n output0 71"	 [pos="e,2219.9,149.91 2184.1,159.2 2192,157.16 2200.9,154.83 2210,152.47"];
+	710	 [height=0.5,
+		label=71,
+		pos="2384,137",
+		shape=octagon,
+		width=0.75];
+	"Concat (op#13)\n input0 66\n input1 70\n output0 71" -> 710	 [pos="e,2356.8,137 2321.1,137 2329.7,137 2338.6,137 2346.8,137"];
+	"Conv (op#14)\n input0 71\n input1 10\n output0 73"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="2493,164",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	710 -> "Conv (op#14)\n input0 71\n input1 10\n output0 73"	 [pos="e,2446.9,152.62 2411.2,143.6 2419.1,145.6 2428.1,147.87 2437.1,150.15"];
+	730	 [height=0.5,
+		label=73,
+		pos="2602,164",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#14)\n input0 71\n input1 10\n output0 73" -> 730	 [pos="e,2574.9,164 2539.1,164 2547.7,164 2556.6,164 2564.8,164"];
+	100	 [height=0.5,
+		label=10,
+		pos="2384,191",
+		shape=octagon,
+		width=0.75];
+	100 -> "Conv (op#14)\n input0 71\n input1 10\n output0 73"	 [pos="e,2446.9,175.38 2411.2,184.4 2419.1,182.4 2428.1,180.13 2437.1,177.85"];
+	"Add (op#15)\n input0 73\n input1 11\n output0 74"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="2708,191",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	730 -> "Add (op#15)\n input0 73\n input1 11\n output0 74"	 [pos="e,2665,180.09 2629.2,170.81 2637.2,172.88 2646.2,175.22 2655.2,177.56"];
+	740	 [height=0.5,
+		label=74,
+		pos="2814,191",
+		shape=octagon,
+		width=0.75];
+	"Add (op#15)\n input0 73\n input1 11\n output0 74" -> 740	 [pos="e,2786.7,191 2751,191 2759.5,191 2768.3,191 2776.6,191"];
+	110	 [height=0.5,
+		label=11,
+		pos="2602,218",
+		shape=octagon,
+		width=0.75];
+	110 -> "Add (op#15)\n input0 73\n input1 11\n output0 74"	 [pos="e,2665,201.91 2629.2,211.19 2637.2,209.12 2646.2,206.78 2655.2,204.44"];
+	"Relu (op#16)\n input0 74\n output0 75"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="2921.5,191",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	740 -> "Relu (op#16)\n input0 74\n output0 75"	 [pos="e,2876.7,191 2841.1,191 2848.9,191 2857.7,191 2866.6,191"];
+	750	 [height=0.5,
+		label=75,
+		pos="3029,191",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#16)\n input0 74\n output0 75" -> 750	 [pos="e,3001.8,191 2966,191 2974.6,191 2983.4,191 2991.7,191"];
+	"Conv (op#17)\n input0 75\n input1 12\n output0 77"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="3138,124",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	750 -> "Conv (op#17)\n input0 75\n input1 12\n output0 77"	 [pos="e,3091.7,152.34 3049.6,178.71 3059.1,172.75 3071.1,165.27 3083.1,157.78"];
+	"Conv (op#20)\n input0 75\n input1 14\n output0 81"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="3138,272",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	750 -> "Conv (op#20)\n input0 75\n input1 14\n output0 81"	 [pos="e,3092.1,237.98 3047.7,204.38 3057.7,211.97 3070.8,221.91 3083.9,231.83"];
+	770	 [height=0.5,
+		label=77,
+		pos="3247,117",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#17)\n input0 75\n input1 12\n output0 77" -> 770	 [pos="e,3219.9,118.71 3184.1,121.05 3192.7,120.49 3201.6,119.91 3209.8,119.37"];
+	120	 [height=0.5,
+		label=12,
+		pos="3029,124",
+		shape=octagon,
+		width=0.75];
+	120 -> "Conv (op#17)\n input0 75\n input1 12\n output0 77"	 [pos="e,3091.9,124 3056.2,124 3064,124 3072.9,124 3081.8,124"];
+	"Add (op#18)\n input0 77\n input1 13\n output0 78"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="3353,155",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	770 -> "Add (op#18)\n input0 77\n input1 13\n output0 78"	 [pos="e,3309.7,139.53 3272.1,125.81 3280.5,128.87 3290.2,132.43 3300,135.99"];
+	780	 [height=0.5,
+		label=78,
+		pos="3459,162",
+		shape=octagon,
+		width=0.75];
+	"Add (op#18)\n input0 77\n input1 13\n output0 78" -> 780	 [pos="e,3431.7,160.23 3396,157.83 3404.5,158.4 3413.3,158.99 3421.6,159.55"];
+	130	 [height=0.5,
+		label=13,
+		pos="3247,171",
+		shape=octagon,
+		width=0.75];
+	130 -> "Add (op#18)\n input0 77\n input1 13\n output0 78"	 [pos="e,3310,161.46 3274.2,166.96 3282.1,165.75 3291,164.38 3300,163.01"];
+	"Relu (op#19)\n input0 78\n output0 79"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="3566.5,164",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	780 -> "Relu (op#19)\n input0 78\n output0 79"	 [pos="e,3521.7,163.17 3486.1,162.49 3493.9,162.64 3502.7,162.81 3511.6,162.98"];
+	790	 [height=0.5,
+		label=79,
+		pos="3674,173",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#19)\n input0 78\n output0 79" -> 790	 [pos="e,3646.8,170.76 3611,167.71 3619.6,168.44 3628.4,169.2 3636.7,169.9"];
+	"Concat (op#23)\n input0 79\n input1 83\n output0 84"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="3787.5,202",
+		shape=box,
+		style=filled,
+		width=1.4028];
+	790 -> "Concat (op#23)\n input0 79\n input1 83\n output0 84"	 [pos="e,3736.9,189.09 3701.1,179.8 3709,181.84 3717.9,184.17 3727,186.53"];
+	810	 [height=0.5,
+		label=81,
+		pos="3247,279",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#20)\n input0 75\n input1 14\n output0 81" -> 810	 [pos="e,3219.9,277.29 3184.1,274.95 3192.7,275.51 3201.6,276.09 3209.8,276.63"];
+	140	 [height=0.5,
+		label=14,
+		pos="3029,272",
+		shape=octagon,
+		width=0.75];
+	140 -> "Conv (op#20)\n input0 75\n input1 14\n output0 81"	 [pos="e,3091.9,272 3056.2,272 3064,272 3072.9,272 3081.8,272"];
+	"Add (op#21)\n input0 81\n input1 15\n output0 82"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="3353,241",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	810 -> "Add (op#21)\n input0 81\n input1 15\n output0 82"	 [pos="e,3309.7,256.47 3272.1,270.19 3280.5,267.13 3290.2,263.57 3300,260.01"];
+	820	 [height=0.5,
+		label=82,
+		pos="3459,240",
+		shape=octagon,
+		width=0.75];
+	"Add (op#21)\n input0 81\n input1 15\n output0 82" -> 820	 [pos="e,3431.7,240.25 3396,240.6 3404.5,240.51 3413.3,240.43 3421.6,240.35"];
+	150	 [height=0.5,
+		label=15,
+		pos="3247,225",
+		shape=octagon,
+		width=0.75];
+	150 -> "Add (op#21)\n input0 81\n input1 15\n output0 82"	 [pos="e,3310,234.54 3274.2,229.04 3282.1,230.25 3291,231.62 3300,232.99"];
+	"Relu (op#22)\n input0 82\n output0 83"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="3566.5,236",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	820 -> "Relu (op#22)\n input0 82\n output0 83"	 [pos="e,3521.7,237.66 3486.1,239.01 3493.9,238.72 3502.7,238.38 3511.6,238.04"];
+	830	 [height=0.5,
+		label=83,
+		pos="3674,231",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#22)\n input0 82\n output0 83" -> 830	 [pos="e,3646.8,232.24 3611,233.94 3619.6,233.53 3628.4,233.11 3636.7,232.72"];
+	830 -> "Concat (op#23)\n input0 79\n input1 83\n output0 84"	 [pos="e,3736.9,214.91 3701.1,224.2 3709,222.16 3717.9,219.83 3727,217.47"];
+	840	 [height=0.5,
+		label=84,
+		pos="3901,202",
+		shape=octagon,
+		width=0.75];
+	"Concat (op#23)\n input0 79\n input1 83\n output0 84" -> 840	 [pos="e,3873.8,202 3838.1,202 3846.7,202 3855.6,202 3863.8,202"];
+	"MaxPool (op#24)\n input0 84\n output0 85"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py(334): max_pool2d\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/pooling.py(143): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/\
+modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="4020.5,202",
+		shape=box,
+		style=filled,
+		width=1.5694];
+	840 -> "MaxPool (op#24)\n input0 84\n output0 85"	 [pos="e,3963.7,202 3928.1,202 3935.7,202 3944.5,202 3953.5,202"];
+	850	 [height=0.5,
+		label=85,
+		pos="4140,202",
+		shape=octagon,
+		width=0.75];
+	"MaxPool (op#24)\n input0 84\n output0 85" -> 850	 [pos="e,4112.8,202 4077.2,202 4085.8,202 4094.6,202 4102.7,202"];
+	"Conv (op#25)\n input0 85\n input1 16\n output0 87"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="4249,229",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	850 -> "Conv (op#25)\n input0 85\n input1 16\n output0 87"	 [pos="e,4202.9,217.62 4167.2,208.6 4175.1,210.6 4184.1,212.87 4193.1,215.15"];
+	870	 [height=0.5,
+		label=87,
+		pos="4358,229",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#25)\n input0 85\n input1 16\n output0 87" -> 870	 [pos="e,4330.9,229 4295.1,229 4303.7,229 4312.6,229 4320.8,229"];
+	160	 [height=0.5,
+		label=16,
+		pos="4140,256",
+		shape=octagon,
+		width=0.75];
+	160 -> "Conv (op#25)\n input0 85\n input1 16\n output0 87"	 [pos="e,4202.9,240.38 4167.2,249.4 4175.1,247.4 4184.1,245.13 4193.1,242.85"];
+	"Add (op#26)\n input0 87\n input1 17\n output0 88"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="4464,256",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	870 -> "Add (op#26)\n input0 87\n input1 17\n output0 88"	 [pos="e,4421,245.09 4385.2,235.81 4393.2,237.88 4402.2,240.22 4411.2,242.56"];
+	880	 [height=0.5,
+		label=88,
+		pos="4570,256",
+		shape=octagon,
+		width=0.75];
+	"Add (op#26)\n input0 87\n input1 17\n output0 88" -> 880	 [pos="e,4542.7,256 4507,256 4515.5,256 4524.3,256 4532.6,256"];
+	170	 [height=0.5,
+		label=17,
+		pos="4358,283",
+		shape=octagon,
+		width=0.75];
+	170 -> "Add (op#26)\n input0 87\n input1 17\n output0 88"	 [pos="e,4421,266.91 4385.2,276.19 4393.2,274.12 4402.2,271.78 4411.2,269.44"];
+	"Relu (op#27)\n input0 88\n output0 89"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="4677.5,256",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	880 -> "Relu (op#27)\n input0 88\n output0 89"	 [pos="e,4632.7,256 4597.1,256 4604.9,256 4613.7,256 4622.6,256"];
+	890	 [height=0.5,
+		label=89,
+		pos="4785,256",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#27)\n input0 88\n output0 89" -> 890	 [pos="e,4757.8,256 4722,256 4730.6,256 4739.4,256 4747.7,256"];
+	"Conv (op#28)\n input0 89\n input1 18\n output0 91"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="4894,189",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	890 -> "Conv (op#28)\n input0 89\n input1 18\n output0 91"	 [pos="e,4847.7,217.34 4805.6,243.71 4815.1,237.75 4827.1,230.27 4839.1,222.78"];
+	"Conv (op#31)\n input0 89\n input1 20\n output0 95"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="4894,337",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	890 -> "Conv (op#31)\n input0 89\n input1 20\n output0 95"	 [pos="e,4848.1,302.98 4803.7,269.38 4813.7,276.97 4826.8,286.91 4839.9,296.83"];
+	910	 [height=0.5,
+		label=91,
+		pos="5003,182",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#28)\n input0 89\n input1 18\n output0 91" -> 910	 [pos="e,4975.9,183.71 4940.1,186.05 4948.7,185.49 4957.6,184.91 4965.8,184.37"];
+	180	 [height=0.5,
+		label=18,
+		pos="4785,189",
+		shape=octagon,
+		width=0.75];
+	180 -> "Conv (op#28)\n input0 89\n input1 18\n output0 91"	 [pos="e,4847.9,189 4812.2,189 4820,189 4828.9,189 4837.8,189"];
+	"Add (op#29)\n input0 91\n input1 19\n output0 92"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="5109,220",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	910 -> "Add (op#29)\n input0 91\n input1 19\n output0 92"	 [pos="e,5065.7,204.53 5028.1,190.81 5036.5,193.87 5046.2,197.43 5056,200.99"];
+	920	 [height=0.5,
+		label=92,
+		pos="5215,227",
+		shape=octagon,
+		width=0.75];
+	"Add (op#29)\n input0 91\n input1 19\n output0 92" -> 920	 [pos="e,5187.7,225.23 5152,222.83 5160.5,223.4 5169.3,223.99 5177.6,224.55"];
+	190	 [height=0.5,
+		label=19,
+		pos="5003,236",
+		shape=octagon,
+		width=0.75];
+	190 -> "Add (op#29)\n input0 91\n input1 19\n output0 92"	 [pos="e,5066,226.46 5030.2,231.96 5038.1,230.75 5047,229.38 5056,228.01"];
+	"Relu (op#30)\n input0 92\n output0 93"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="5322.5,229",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	920 -> "Relu (op#30)\n input0 92\n output0 93"	 [pos="e,5277.7,228.17 5242.1,227.49 5249.9,227.64 5258.7,227.81 5267.6,227.98"];
+	930	 [height=0.5,
+		label=93,
+		pos="5430,238",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#30)\n input0 92\n output0 93" -> 930	 [pos="e,5402.8,235.76 5367,232.71 5375.6,233.44 5384.4,234.2 5392.7,234.9"];
+	"Concat (op#34)\n input0 93\n input1 97\n output0 98"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="5543.5,267",
+		shape=box,
+		style=filled,
+		width=1.4028];
+	930 -> "Concat (op#34)\n input0 93\n input1 97\n output0 98"	 [pos="e,5492.9,254.09 5457.1,244.8 5465,246.84 5473.9,249.17 5483,251.53"];
+	950	 [height=0.5,
+		label=95,
+		pos="5003,344",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#31)\n input0 89\n input1 20\n output0 95" -> 950	 [pos="e,4975.9,342.29 4940.1,339.95 4948.7,340.51 4957.6,341.09 4965.8,341.63"];
+	200	 [height=0.5,
+		label=20,
+		pos="4785,337",
+		shape=octagon,
+		width=0.75];
+	200 -> "Conv (op#31)\n input0 89\n input1 20\n output0 95"	 [pos="e,4847.9,337 4812.2,337 4820,337 4828.9,337 4837.8,337"];
+	"Add (op#32)\n input0 95\n input1 21\n output0 96"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="5109,306",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	950 -> "Add (op#32)\n input0 95\n input1 21\n output0 96"	 [pos="e,5065.7,321.47 5028.1,335.19 5036.5,332.13 5046.2,328.57 5056,325.01"];
+	960	 [height=0.5,
+		label=96,
+		pos="5215,305",
+		shape=octagon,
+		width=0.75];
+	"Add (op#32)\n input0 95\n input1 21\n output0 96" -> 960	 [pos="e,5187.7,305.25 5152,305.6 5160.5,305.51 5169.3,305.43 5177.6,305.35"];
+	210	 [height=0.5,
+		label=21,
+		pos="5003,290",
+		shape=octagon,
+		width=0.75];
+	210 -> "Add (op#32)\n input0 95\n input1 21\n output0 96"	 [pos="e,5066,299.54 5030.2,294.04 5038.1,295.25 5047,296.62 5056,297.99"];
+	"Relu (op#33)\n input0 96\n output0 97"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="5322.5,301",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	960 -> "Relu (op#33)\n input0 96\n output0 97"	 [pos="e,5277.7,302.66 5242.1,304.01 5249.9,303.72 5258.7,303.38 5267.6,303.04"];
+	970	 [height=0.5,
+		label=97,
+		pos="5430,296",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#33)\n input0 96\n output0 97" -> 970	 [pos="e,5402.8,297.24 5367,298.94 5375.6,298.53 5384.4,298.11 5392.7,297.72"];
+	970 -> "Concat (op#34)\n input0 93\n input1 97\n output0 98"	 [pos="e,5492.9,279.91 5457.1,289.2 5465,287.16 5473.9,284.83 5483,282.47"];
+	980	 [height=0.5,
+		label=98,
+		pos="5657,267",
+		shape=octagon,
+		width=0.75];
+	"Concat (op#34)\n input0 93\n input1 97\n output0 98" -> 980	 [pos="e,5629.8,267 5594.1,267 5602.7,267 5611.6,267 5619.8,267"];
+	"Conv (op#35)\n input0 98\n input1 22\n output0 100"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="5766,294",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	980 -> "Conv (op#35)\n input0 98\n input1 22\n output0 100"	 [pos="e,5719.9,282.62 5684.2,273.6 5692.1,275.6 5701.1,277.87 5710.1,280.15"];
+	1000	 [height=0.5,
+		label=100,
+		pos="5875,294",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#35)\n input0 98\n input1 22\n output0 100" -> 1000	 [pos="e,5847.9,294 5812.1,294 5820.7,294 5829.6,294 5837.8,294"];
+	220	 [height=0.5,
+		label=22,
+		pos="5657,321",
+		shape=octagon,
+		width=0.75];
+	220 -> "Conv (op#35)\n input0 98\n input1 22\n output0 100"	 [pos="e,5719.9,305.38 5684.2,314.4 5692.1,312.4 5701.1,310.13 5710.1,307.85"];
+	"Add (op#36)\n input0 100\n input1 23\n output0 101"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="5981,321",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1000 -> "Add (op#36)\n input0 100\n input1 23\n output0 101"	 [pos="e,5938,310.09 5902.2,300.81 5910.2,302.88 5919.2,305.22 5928.2,307.56"];
+	1010	 [height=0.5,
+		label=101,
+		pos="6087,321",
+		shape=octagon,
+		width=0.75];
+	"Add (op#36)\n input0 100\n input1 23\n output0 101" -> 1010	 [pos="e,6059.7,321 6024,321 6032.5,321 6041.3,321 6049.6,321"];
+	230	 [height=0.5,
+		label=23,
+		pos="5875,348",
+		shape=octagon,
+		width=0.75];
+	230 -> "Add (op#36)\n input0 100\n input1 23\n output0 101"	 [pos="e,5938,331.91 5902.2,341.19 5910.2,339.12 5919.2,336.78 5928.2,334.44"];
+	"Relu (op#37)\n input0 101\n output0 102"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="6194.5,321",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1010 -> "Relu (op#37)\n input0 101\n output0 102"	 [pos="e,6149.7,321 6114.1,321 6121.9,321 6130.7,321 6139.6,321"];
+	1020	 [height=0.5,
+		label=102,
+		pos="6302,321",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#37)\n input0 101\n output0 102" -> 1020	 [pos="e,6274.8,321 6239,321 6247.6,321 6256.4,321 6264.7,321"];
+	"Conv (op#38)\n input0 102\n input1 24\n output0 104"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="6411,254",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1020 -> "Conv (op#38)\n input0 102\n input1 24\n output0 104"	 [pos="e,6364.7,282.34 6322.6,308.71 6332.1,302.75 6344.1,295.27 6356.1,287.78"];
+	"Conv (op#41)\n input0 102\n input1 26\n output0 108"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="6411,402",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1020 -> "Conv (op#41)\n input0 102\n input1 26\n output0 108"	 [pos="e,6365.1,367.98 6320.7,334.38 6330.7,341.97 6343.8,351.91 6356.9,361.83"];
+	1040	 [height=0.5,
+		label=104,
+		pos="6520,247",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#38)\n input0 102\n input1 24\n output0 104" -> 1040	 [pos="e,6492.9,248.71 6457.1,251.05 6465.7,250.49 6474.6,249.91 6482.8,249.37"];
+	240	 [height=0.5,
+		label=24,
+		pos="6302,254",
+		shape=octagon,
+		width=0.75];
+	240 -> "Conv (op#38)\n input0 102\n input1 24\n output0 104"	 [pos="e,6364.9,254 6329.2,254 6337,254 6345.9,254 6354.8,254"];
+	"Add (op#39)\n input0 104\n input1 25\n output0 105"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="6626,285",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1040 -> "Add (op#39)\n input0 104\n input1 25\n output0 105"	 [pos="e,6582.7,269.53 6545.1,255.81 6553.5,258.87 6563.2,262.43 6573,265.99"];
+	1050	 [height=0.5,
+		label=105,
+		pos="6732,292",
+		shape=octagon,
+		width=0.75];
+	"Add (op#39)\n input0 104\n input1 25\n output0 105" -> 1050	 [pos="e,6704.7,290.23 6669,287.83 6677.5,288.4 6686.3,288.99 6694.6,289.55"];
+	250	 [height=0.5,
+		label=25,
+		pos="6520,301",
+		shape=octagon,
+		width=0.75];
+	250 -> "Add (op#39)\n input0 104\n input1 25\n output0 105"	 [pos="e,6583,291.46 6547.2,296.96 6555.1,295.75 6564,294.38 6573,293.01"];
+	"Relu (op#40)\n input0 105\n output0 106"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="6839.5,294",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1050 -> "Relu (op#40)\n input0 105\n output0 106"	 [pos="e,6794.7,293.17 6759.1,292.49 6766.9,292.64 6775.7,292.81 6784.6,292.98"];
+	1060	 [height=0.5,
+		label=106,
+		pos="6947,303",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#40)\n input0 105\n output0 106" -> 1060	 [pos="e,6919.8,300.76 6884,297.71 6892.6,298.44 6901.4,299.2 6909.7,299.9"];
+	"Concat (op#44)\n input0 106\n input1 110\n output0 111"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="7060.5,332",
+		shape=box,
+		style=filled,
+		width=1.4028];
+	1060 -> "Concat (op#44)\n input0 106\n input1 110\n output0 111"	 [pos="e,7009.9,319.09 6974.1,309.8 6982,311.84 6990.9,314.17 7000,316.53"];
+	1080	 [height=0.5,
+		label=108,
+		pos="6520,409",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#41)\n input0 102\n input1 26\n output0 108" -> 1080	 [pos="e,6492.9,407.29 6457.1,404.95 6465.7,405.51 6474.6,406.09 6482.8,406.63"];
+	260	 [height=0.5,
+		label=26,
+		pos="6302,402",
+		shape=octagon,
+		width=0.75];
+	260 -> "Conv (op#41)\n input0 102\n input1 26\n output0 108"	 [pos="e,6364.9,402 6329.2,402 6337,402 6345.9,402 6354.8,402"];
+	"Add (op#42)\n input0 108\n input1 27\n output0 109"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="6626,371",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1080 -> "Add (op#42)\n input0 108\n input1 27\n output0 109"	 [pos="e,6582.7,386.47 6545.1,400.19 6553.5,397.13 6563.2,393.57 6573,390.01"];
+	1090	 [height=0.5,
+		label=109,
+		pos="6732,370",
+		shape=octagon,
+		width=0.75];
+	"Add (op#42)\n input0 108\n input1 27\n output0 109" -> 1090	 [pos="e,6704.7,370.25 6669,370.6 6677.5,370.51 6686.3,370.43 6694.6,370.35"];
+	270	 [height=0.5,
+		label=27,
+		pos="6520,355",
+		shape=octagon,
+		width=0.75];
+	270 -> "Add (op#42)\n input0 108\n input1 27\n output0 109"	 [pos="e,6583,364.54 6547.2,359.04 6555.1,360.25 6564,361.62 6573,362.99"];
+	"Relu (op#43)\n input0 109\n output0 110"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="6839.5,366",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1090 -> "Relu (op#43)\n input0 109\n output0 110"	 [pos="e,6794.7,367.66 6759.1,369.01 6766.9,368.72 6775.7,368.38 6784.6,368.04"];
+	1100	 [height=0.5,
+		label=110,
+		pos="6947,361",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#43)\n input0 109\n output0 110" -> 1100	 [pos="e,6919.8,362.24 6884,363.94 6892.6,363.53 6901.4,363.11 6909.7,362.72"];
+	1100 -> "Concat (op#44)\n input0 106\n input1 110\n output0 111"	 [pos="e,7009.9,344.91 6974.1,354.2 6982,352.16 6990.9,349.83 7000,347.47"];
+	1110	 [height=0.5,
+		label=111,
+		pos="7174,332",
+		shape=octagon,
+		width=0.75];
+	"Concat (op#44)\n input0 106\n input1 110\n output0 111" -> 1110	 [pos="e,7146.8,332 7111.1,332 7119.7,332 7128.6,332 7136.8,332"];
+	"MaxPool (op#45)\n input0 111\n output0 112"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py(334): max_pool2d\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/pooling.py(143): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/\
+modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="7293.5,332",
+		shape=box,
+		style=filled,
+		width=1.5694];
+	1110 -> "MaxPool (op#45)\n input0 111\n output0 112"	 [pos="e,7236.7,332 7201.1,332 7208.7,332 7217.5,332 7226.5,332"];
+	1120	 [height=0.5,
+		label=112,
+		pos="7413,332",
+		shape=octagon,
+		width=0.75];
+	"MaxPool (op#45)\n input0 111\n output0 112" -> 1120	 [pos="e,7385.8,332 7350.2,332 7358.8,332 7367.6,332 7375.7,332"];
+	"Conv (op#46)\n input0 112\n input1 28\n output0 114"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="7522,359",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1120 -> "Conv (op#46)\n input0 112\n input1 28\n output0 114"	 [pos="e,7475.9,347.62 7440.2,338.6 7448.1,340.6 7457.1,342.87 7466.1,345.15"];
+	1140	 [height=0.5,
+		label=114,
+		pos="7631,359",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#46)\n input0 112\n input1 28\n output0 114" -> 1140	 [pos="e,7603.9,359 7568.1,359 7576.7,359 7585.6,359 7593.8,359"];
+	280	 [height=0.5,
+		label=28,
+		pos="7413,386",
+		shape=octagon,
+		width=0.75];
+	280 -> "Conv (op#46)\n input0 112\n input1 28\n output0 114"	 [pos="e,7475.9,370.38 7440.2,379.4 7448.1,377.4 7457.1,375.13 7466.1,372.85"];
+	"Add (op#47)\n input0 114\n input1 29\n output0 115"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="7737,386",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1140 -> "Add (op#47)\n input0 114\n input1 29\n output0 115"	 [pos="e,7694,375.09 7658.2,365.81 7666.2,367.88 7675.2,370.22 7684.2,372.56"];
+	1150	 [height=0.5,
+		label=115,
+		pos="7843,386",
+		shape=octagon,
+		width=0.75];
+	"Add (op#47)\n input0 114\n input1 29\n output0 115" -> 1150	 [pos="e,7815.7,386 7780,386 7788.5,386 7797.3,386 7805.6,386"];
+	290	 [height=0.5,
+		label=29,
+		pos="7631,413",
+		shape=octagon,
+		width=0.75];
+	290 -> "Add (op#47)\n input0 114\n input1 29\n output0 115"	 [pos="e,7694,396.91 7658.2,406.19 7666.2,404.12 7675.2,401.78 7684.2,399.44"];
+	"Relu (op#48)\n input0 115\n output0 116"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="7950.5,386",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1150 -> "Relu (op#48)\n input0 115\n output0 116"	 [pos="e,7905.7,386 7870.1,386 7877.9,386 7886.7,386 7895.6,386"];
+	1160	 [height=0.5,
+		label=116,
+		pos="8058,386",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#48)\n input0 115\n output0 116" -> 1160	 [pos="e,8030.8,386 7995,386 8003.6,386 8012.4,386 8020.7,386"];
+	"Conv (op#49)\n input0 116\n input1 30\n output0 118"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="8167,319",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1160 -> "Conv (op#49)\n input0 116\n input1 30\n output0 118"	 [pos="e,8120.7,347.34 8078.6,373.71 8088.1,367.75 8100.1,360.27 8112.1,352.78"];
+	"Conv (op#52)\n input0 116\n input1 32\n output0 122"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="8167,467",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1160 -> "Conv (op#52)\n input0 116\n input1 32\n output0 122"	 [pos="e,8121.1,432.98 8076.7,399.38 8086.7,406.97 8099.8,416.91 8112.9,426.83"];
+	1180	 [height=0.5,
+		label=118,
+		pos="8276,312",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#49)\n input0 116\n input1 30\n output0 118" -> 1180	 [pos="e,8248.9,313.71 8213.1,316.05 8221.7,315.49 8230.6,314.91 8238.8,314.37"];
+	300	 [height=0.5,
+		label=30,
+		pos="8058,319",
+		shape=octagon,
+		width=0.75];
+	300 -> "Conv (op#49)\n input0 116\n input1 30\n output0 118"	 [pos="e,8120.9,319 8085.2,319 8093,319 8101.9,319 8110.8,319"];
+	"Add (op#50)\n input0 118\n input1 31\n output0 119"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="8382,350",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1180 -> "Add (op#50)\n input0 118\n input1 31\n output0 119"	 [pos="e,8338.7,334.53 8301.1,320.81 8309.5,323.87 8319.2,327.43 8329,330.99"];
+	1190	 [height=0.5,
+		label=119,
+		pos="8488,357",
+		shape=octagon,
+		width=0.75];
+	"Add (op#50)\n input0 118\n input1 31\n output0 119" -> 1190	 [pos="e,8460.7,355.23 8425,352.83 8433.5,353.4 8442.3,353.99 8450.6,354.55"];
+	310	 [height=0.5,
+		label=31,
+		pos="8276,366",
+		shape=octagon,
+		width=0.75];
+	310 -> "Add (op#50)\n input0 118\n input1 31\n output0 119"	 [pos="e,8339,356.46 8303.2,361.96 8311.1,360.75 8320,359.38 8329,358.01"];
+	"Relu (op#51)\n input0 119\n output0 120"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="8595.5,359",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1190 -> "Relu (op#51)\n input0 119\n output0 120"	 [pos="e,8550.7,358.17 8515.1,357.49 8522.9,357.64 8531.7,357.81 8540.6,357.98"];
+	1200	 [height=0.5,
+		label=120,
+		pos="8703,368",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#51)\n input0 119\n output0 120" -> 1200	 [pos="e,8675.8,365.76 8640,362.71 8648.6,363.44 8657.4,364.2 8665.7,364.9"];
+	"Concat (op#55)\n input0 120\n input1 124\n output0 125"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="8816.5,397",
+		shape=box,
+		style=filled,
+		width=1.4028];
+	1200 -> "Concat (op#55)\n input0 120\n input1 124\n output0 125"	 [pos="e,8765.9,384.09 8730.1,374.8 8738,376.84 8746.9,379.17 8756,381.53"];
+	1220	 [height=0.5,
+		label=122,
+		pos="8276,474",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#52)\n input0 116\n input1 32\n output0 122" -> 1220	 [pos="e,8248.9,472.29 8213.1,469.95 8221.7,470.51 8230.6,471.09 8238.8,471.63"];
+	320	 [height=0.5,
+		label=32,
+		pos="8058,467",
+		shape=octagon,
+		width=0.75];
+	320 -> "Conv (op#52)\n input0 116\n input1 32\n output0 122"	 [pos="e,8120.9,467 8085.2,467 8093,467 8101.9,467 8110.8,467"];
+	"Add (op#53)\n input0 122\n input1 33\n output0 123"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="8382,436",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1220 -> "Add (op#53)\n input0 122\n input1 33\n output0 123"	 [pos="e,8338.7,451.47 8301.1,465.19 8309.5,462.13 8319.2,458.57 8329,455.01"];
+	1230	 [height=0.5,
+		label=123,
+		pos="8488,435",
+		shape=octagon,
+		width=0.75];
+	"Add (op#53)\n input0 122\n input1 33\n output0 123" -> 1230	 [pos="e,8460.7,435.25 8425,435.6 8433.5,435.51 8442.3,435.43 8450.6,435.35"];
+	330	 [height=0.5,
+		label=33,
+		pos="8276,420",
+		shape=octagon,
+		width=0.75];
+	330 -> "Add (op#53)\n input0 122\n input1 33\n output0 123"	 [pos="e,8339,429.54 8303.2,424.04 8311.1,425.25 8320,426.62 8329,427.99"];
+	"Relu (op#54)\n input0 123\n output0 124"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="8595.5,431",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1230 -> "Relu (op#54)\n input0 123\n output0 124"	 [pos="e,8550.7,432.66 8515.1,434.01 8522.9,433.72 8531.7,433.38 8540.6,433.04"];
+	1240	 [height=0.5,
+		label=124,
+		pos="8703,426",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#54)\n input0 123\n output0 124" -> 1240	 [pos="e,8675.8,427.24 8640,428.94 8648.6,428.53 8657.4,428.11 8665.7,427.72"];
+	1240 -> "Concat (op#55)\n input0 120\n input1 124\n output0 125"	 [pos="e,8765.9,409.91 8730.1,419.2 8738,417.16 8746.9,414.83 8756,412.47"];
+	1250	 [height=0.5,
+		label=125,
+		pos="8930,397",
+		shape=octagon,
+		width=0.75];
+	"Concat (op#55)\n input0 120\n input1 124\n output0 125" -> 1250	 [pos="e,8902.8,397 8867.1,397 8875.7,397 8884.6,397 8892.8,397"];
+	"Conv (op#56)\n input0 125\n input1 34\n output0 127"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="9039,424",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1250 -> "Conv (op#56)\n input0 125\n input1 34\n output0 127"	 [pos="e,8992.9,412.62 8957.2,403.6 8965.1,405.6 8974.1,407.87 8983.1,410.15"];
+	1270	 [height=0.5,
+		label=127,
+		pos="9148,424",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#56)\n input0 125\n input1 34\n output0 127" -> 1270	 [pos="e,9120.9,424 9085.1,424 9093.7,424 9102.6,424 9110.8,424"];
+	340	 [height=0.5,
+		label=34,
+		pos="8930,451",
+		shape=octagon,
+		width=0.75];
+	340 -> "Conv (op#56)\n input0 125\n input1 34\n output0 127"	 [pos="e,8992.9,435.38 8957.2,444.4 8965.1,442.4 8974.1,440.13 8983.1,437.85"];
+	"Add (op#57)\n input0 127\n input1 35\n output0 128"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="9254,451",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1270 -> "Add (op#57)\n input0 127\n input1 35\n output0 128"	 [pos="e,9211,440.09 9175.2,430.81 9183.2,432.88 9192.2,435.22 9201.2,437.56"];
+	1280	 [height=0.5,
+		label=128,
+		pos="9360,451",
+		shape=octagon,
+		width=0.75];
+	"Add (op#57)\n input0 127\n input1 35\n output0 128" -> 1280	 [pos="e,9332.7,451 9297,451 9305.5,451 9314.3,451 9322.6,451"];
+	350	 [height=0.5,
+		label=35,
+		pos="9148,478",
+		shape=octagon,
+		width=0.75];
+	350 -> "Add (op#57)\n input0 127\n input1 35\n output0 128"	 [pos="e,9211,461.91 9175.2,471.19 9183.2,469.12 9192.2,466.78 9201.2,464.44"];
+	"Relu (op#58)\n input0 128\n output0 129"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="9467.5,451",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1280 -> "Relu (op#58)\n input0 128\n output0 129"	 [pos="e,9422.7,451 9387.1,451 9394.9,451 9403.7,451 9412.6,451"];
+	1290	 [height=0.5,
+		label=129,
+		pos="9575,451",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#58)\n input0 128\n output0 129" -> 1290	 [pos="e,9547.8,451 9512,451 9520.6,451 9529.4,451 9537.7,451"];
+	"Conv (op#59)\n input0 129\n input1 36\n output0 131"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="9684,384",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1290 -> "Conv (op#59)\n input0 129\n input1 36\n output0 131"	 [pos="e,9637.7,412.34 9595.6,438.71 9605.1,432.75 9617.1,425.27 9629.1,417.78"];
+	"Conv (op#62)\n input0 129\n input1 38\n output0 135"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="9684,532",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1290 -> "Conv (op#62)\n input0 129\n input1 38\n output0 135"	 [pos="e,9638.1,497.98 9593.7,464.38 9603.7,471.97 9616.8,481.91 9629.9,491.83"];
+	1310	 [height=0.5,
+		label=131,
+		pos="9793,377",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#59)\n input0 129\n input1 36\n output0 131" -> 1310	 [pos="e,9765.9,378.71 9730.1,381.05 9738.7,380.49 9747.6,379.91 9755.8,379.37"];
+	360	 [height=0.5,
+		label=36,
+		pos="9575,384",
+		shape=octagon,
+		width=0.75];
+	360 -> "Conv (op#59)\n input0 129\n input1 36\n output0 131"	 [pos="e,9637.9,384 9602.2,384 9610,384 9618.9,384 9627.8,384"];
+	"Add (op#60)\n input0 131\n input1 37\n output0 132"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="9899,415",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1310 -> "Add (op#60)\n input0 131\n input1 37\n output0 132"	 [pos="e,9855.7,399.53 9818.1,385.81 9826.5,388.87 9836.2,392.43 9846,395.99"];
+	1320	 [height=0.5,
+		label=132,
+		pos="10005,422",
+		shape=octagon,
+		width=0.75];
+	"Add (op#60)\n input0 131\n input1 37\n output0 132" -> 1320	 [pos="e,9977.7,420.23 9942,417.83 9950.5,418.4 9959.3,418.99 9967.6,419.55"];
+	370	 [height=0.5,
+		label=37,
+		pos="9793,431",
+		shape=octagon,
+		width=0.75];
+	370 -> "Add (op#60)\n input0 131\n input1 37\n output0 132"	 [pos="e,9856,421.46 9820.2,426.96 9828.1,425.75 9837,424.38 9846,423.01"];
+	"Relu (op#61)\n input0 132\n output0 133"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="10112,424",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1320 -> "Relu (op#61)\n input0 132\n output0 133"	 [pos="e,10068,423.17 10032,422.49 10040,422.64 10049,422.81 10058,422.98"];
+	1330	 [height=0.5,
+		label=133,
+		pos="10220,433",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#61)\n input0 132\n output0 133" -> 1330	 [pos="e,10193,430.76 10157,427.71 10166,428.44 10174,429.2 10183,429.9"];
+	"Concat (op#65)\n input0 133\n input1 137\n output0 138"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="10334,462",
+		shape=box,
+		style=filled,
+		width=1.4028];
+	1330 -> "Concat (op#65)\n input0 133\n input1 137\n output0 138"	 [pos="e,10283,449.09 10247,439.8 10255,441.84 10264,444.17 10273,446.53"];
+	1350	 [height=0.5,
+		label=135,
+		pos="9793,539",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#62)\n input0 129\n input1 38\n output0 135" -> 1350	 [pos="e,9765.9,537.29 9730.1,534.95 9738.7,535.51 9747.6,536.09 9755.8,536.63"];
+	380	 [height=0.5,
+		label=38,
+		pos="9575,532",
+		shape=octagon,
+		width=0.75];
+	380 -> "Conv (op#62)\n input0 129\n input1 38\n output0 135"	 [pos="e,9637.9,532 9602.2,532 9610,532 9618.9,532 9627.8,532"];
+	"Add (op#63)\n input0 135\n input1 39\n output0 136"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="9899,501",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1350 -> "Add (op#63)\n input0 135\n input1 39\n output0 136"	 [pos="e,9855.7,516.47 9818.1,530.19 9826.5,527.13 9836.2,523.57 9846,520.01"];
+	1360	 [height=0.5,
+		label=136,
+		pos="10005,500",
+		shape=octagon,
+		width=0.75];
+	"Add (op#63)\n input0 135\n input1 39\n output0 136" -> 1360	 [pos="e,9977.7,500.25 9942,500.6 9950.5,500.51 9959.3,500.43 9967.6,500.35"];
+	390	 [height=0.5,
+		label=39,
+		pos="9793,485",
+		shape=octagon,
+		width=0.75];
+	390 -> "Add (op#63)\n input0 135\n input1 39\n output0 136"	 [pos="e,9856,494.54 9820.2,489.04 9828.1,490.25 9837,491.62 9846,492.99"];
+	"Relu (op#64)\n input0 136\n output0 137"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="10112,496",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1360 -> "Relu (op#64)\n input0 136\n output0 137"	 [pos="e,10068,497.66 10032,499.01 10040,498.72 10049,498.38 10058,498.04"];
+	1370	 [height=0.5,
+		label=137,
+		pos="10220,491",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#64)\n input0 136\n output0 137" -> 1370	 [pos="e,10193,492.24 10157,493.94 10166,493.53 10174,493.11 10183,492.72"];
+	1370 -> "Concat (op#65)\n input0 133\n input1 137\n output0 138"	 [pos="e,10283,474.91 10247,484.2 10255,482.16 10264,479.83 10273,477.47"];
+	1380	 [height=0.5,
+		label=138,
+		pos="10447,462",
+		shape=octagon,
+		width=0.75];
+	"Concat (op#65)\n input0 133\n input1 137\n output0 138" -> 1380	 [pos="e,10420,462 10384,462 10393,462 10402,462 10410,462"];
+	"Conv (op#66)\n input0 138\n input1 40\n output0 140"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="10556,489",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1380 -> "Conv (op#66)\n input0 138\n input1 40\n output0 140"	 [pos="e,10510,477.62 10474,468.6 10482,470.6 10491,472.87 10500,475.15"];
+	1400	 [height=0.5,
+		label=140,
+		pos="10665,489",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#66)\n input0 138\n input1 40\n output0 140" -> 1400	 [pos="e,10638,489 10602,489 10611,489 10620,489 10628,489"];
+	400	 [height=0.5,
+		label=40,
+		pos="10447,516",
+		shape=octagon,
+		width=0.75];
+	400 -> "Conv (op#66)\n input0 138\n input1 40\n output0 140"	 [pos="e,10510,500.38 10474,509.4 10482,507.4 10491,505.13 10500,502.85"];
+	"Add (op#67)\n input0 140\n input1 41\n output0 141"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="10771,516",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1400 -> "Add (op#67)\n input0 140\n input1 41\n output0 141"	 [pos="e,10728,505.09 10692,495.81 10700,497.88 10709,500.22 10718,502.56"];
+	1410	 [height=0.5,
+		label=141,
+		pos="10877,516",
+		shape=octagon,
+		width=0.75];
+	"Add (op#67)\n input0 140\n input1 41\n output0 141" -> 1410	 [pos="e,10850,516 10814,516 10822,516 10831,516 10840,516"];
+	410	 [height=0.5,
+		label=41,
+		pos="10665,543",
+		shape=octagon,
+		width=0.75];
+	410 -> "Add (op#67)\n input0 140\n input1 41\n output0 141"	 [pos="e,10728,526.91 10692,536.19 10700,534.12 10709,531.78 10718,529.44"];
+	"Relu (op#68)\n input0 141\n output0 142"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="10984,516",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1410 -> "Relu (op#68)\n input0 141\n output0 142"	 [pos="e,10940,516 10904,516 10912,516 10921,516 10930,516"];
+	1420	 [height=0.5,
+		label=142,
+		pos="11092,516",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#68)\n input0 141\n output0 142" -> 1420	 [pos="e,11065,516 11029,516 11038,516 11046,516 11055,516"];
+	"Conv (op#69)\n input0 142\n input1 42\n output0 144"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="11201,449",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1420 -> "Conv (op#69)\n input0 142\n input1 42\n output0 144"	 [pos="e,11155,477.34 11113,503.71 11122,497.75 11134,490.27 11146,482.78"];
+	"Conv (op#72)\n input0 142\n input1 44\n output0 148"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="11201,597",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1420 -> "Conv (op#72)\n input0 142\n input1 44\n output0 148"	 [pos="e,11155,562.98 11111,529.38 11121,536.97 11134,546.91 11147,556.83"];
+	1440	 [height=0.5,
+		label=144,
+		pos="11310,442",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#69)\n input0 142\n input1 42\n output0 144" -> 1440	 [pos="e,11283,443.71 11247,446.05 11256,445.49 11265,444.91 11273,444.37"];
+	420	 [height=0.5,
+		label=42,
+		pos="11092,449",
+		shape=octagon,
+		width=0.75];
+	420 -> "Conv (op#69)\n input0 142\n input1 42\n output0 144"	 [pos="e,11155,449 11119,449 11127,449 11136,449 11145,449"];
+	"Add (op#70)\n input0 144\n input1 43\n output0 145"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="11416,480",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1440 -> "Add (op#70)\n input0 144\n input1 43\n output0 145"	 [pos="e,11373,464.53 11335,450.81 11343,453.87 11353,457.43 11363,460.99"];
+	1450	 [height=0.5,
+		label=145,
+		pos="11522,487",
+		shape=octagon,
+		width=0.75];
+	"Add (op#70)\n input0 144\n input1 43\n output0 145" -> 1450	 [pos="e,11495,485.23 11459,482.83 11467,483.4 11476,483.99 11485,484.55"];
+	430	 [height=0.5,
+		label=43,
+		pos="11310,496",
+		shape=octagon,
+		width=0.75];
+	430 -> "Add (op#70)\n input0 144\n input1 43\n output0 145"	 [pos="e,11373,486.46 11337,491.96 11345,490.75 11354,489.38 11363,488.01"];
+	"Relu (op#71)\n input0 145\n output0 146"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="11630,489",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1450 -> "Relu (op#71)\n input0 145\n output0 146"	 [pos="e,11585,488.17 11549,487.49 11557,487.64 11566,487.81 11575,487.98"];
+	1460	 [height=0.5,
+		label=146,
+		pos="11737,498",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#71)\n input0 145\n output0 146" -> 1460	 [pos="e,11710,495.76 11674,492.71 11683,493.44 11691,494.2 11700,494.9"];
+	"Concat (op#75)\n input0 146\n input1 150\n output0 151"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="11850,527",
+		shape=box,
+		style=filled,
+		width=1.4028];
+	1460 -> "Concat (op#75)\n input0 146\n input1 150\n output0 151"	 [pos="e,11800,514.09 11764,504.8 11772,506.84 11781,509.17 11790,511.53"];
+	1480	 [height=0.5,
+		label=148,
+		pos="11310,604",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#72)\n input0 142\n input1 44\n output0 148" -> 1480	 [pos="e,11283,602.29 11247,599.95 11256,600.51 11265,601.09 11273,601.63"];
+	440	 [height=0.5,
+		label=44,
+		pos="11092,597",
+		shape=octagon,
+		width=0.75];
+	440 -> "Conv (op#72)\n input0 142\n input1 44\n output0 148"	 [pos="e,11155,597 11119,597 11127,597 11136,597 11145,597"];
+	"Add (op#73)\n input0 148\n input1 45\n output0 149"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="11416,566",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1480 -> "Add (op#73)\n input0 148\n input1 45\n output0 149"	 [pos="e,11373,581.47 11335,595.19 11343,592.13 11353,588.57 11363,585.01"];
+	1490	 [height=0.5,
+		label=149,
+		pos="11522,565",
+		shape=octagon,
+		width=0.75];
+	"Add (op#73)\n input0 148\n input1 45\n output0 149" -> 1490	 [pos="e,11495,565.25 11459,565.6 11467,565.51 11476,565.43 11485,565.35"];
+	450	 [height=0.5,
+		label=45,
+		pos="11310,550",
+		shape=octagon,
+		width=0.75];
+	450 -> "Add (op#73)\n input0 148\n input1 45\n output0 149"	 [pos="e,11373,559.54 11337,554.04 11345,555.25 11354,556.62 11363,557.99"];
+	"Relu (op#74)\n input0 149\n output0 150"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="11630,561",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1490 -> "Relu (op#74)\n input0 149\n output0 150"	 [pos="e,11585,562.66 11549,564.01 11557,563.72 11566,563.38 11575,563.04"];
+	1500	 [height=0.5,
+		label=150,
+		pos="11737,556",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#74)\n input0 149\n output0 150" -> 1500	 [pos="e,11710,557.24 11674,558.94 11683,558.53 11691,558.11 11700,557.72"];
+	1500 -> "Concat (op#75)\n input0 146\n input1 150\n output0 151"	 [pos="e,11800,539.91 11764,549.2 11772,547.16 11781,544.83 11790,542.47"];
+	1510	 [height=0.5,
+		label=151,
+		pos="11964,527",
+		shape=octagon,
+		width=0.75];
+	"Concat (op#75)\n input0 146\n input1 150\n output0 151" -> 1510	 [pos="e,11937,527 11901,527 11910,527 11919,527 11927,527"];
+	"Conv (op#76)\n input0 151\n input1 46\n output0 153"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="12073,554",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1510 -> "Conv (op#76)\n input0 151\n input1 46\n output0 153"	 [pos="e,12027,542.62 11991,533.6 11999,535.6 12008,537.87 12017,540.15"];
+	1530	 [height=0.5,
+		label=153,
+		pos="12182,554",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#76)\n input0 151\n input1 46\n output0 153" -> 1530	 [pos="e,12155,554 12119,554 12128,554 12137,554 12145,554"];
+	460	 [height=0.5,
+		label=46,
+		pos="11964,581",
+		shape=octagon,
+		width=0.75];
+	460 -> "Conv (op#76)\n input0 151\n input1 46\n output0 153"	 [pos="e,12027,565.38 11991,574.4 11999,572.4 12008,570.13 12017,567.85"];
+	"Add (op#77)\n input0 153\n input1 47\n output0 154"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="12288,581",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1530 -> "Add (op#77)\n input0 153\n input1 47\n output0 154"	 [pos="e,12245,570.09 12209,560.81 12217,562.88 12226,565.22 12235,567.56"];
+	1540	 [height=0.5,
+		label=154,
+		pos="12394,581",
+		shape=octagon,
+		width=0.75];
+	"Add (op#77)\n input0 153\n input1 47\n output0 154" -> 1540	 [pos="e,12367,581 12331,581 12339,581 12348,581 12357,581"];
+	470	 [height=0.5,
+		label=47,
+		pos="12182,608",
+		shape=octagon,
+		width=0.75];
+	470 -> "Add (op#77)\n input0 153\n input1 47\n output0 154"	 [pos="e,12245,591.91 12209,601.19 12217,599.12 12226,596.78 12235,594.44"];
+	"Relu (op#78)\n input0 154\n output0 155"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(38): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="12502,581",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1540 -> "Relu (op#78)\n input0 154\n output0 155"	 [pos="e,12457,581 12421,581 12429,581 12438,581 12447,581"];
+	1550	 [height=0.5,
+		label=155,
+		pos="12609,581",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#78)\n input0 154\n output0 155" -> 1550	 [pos="e,12582,581 12546,581 12555,581 12563,581 12572,581"];
+	"Conv (op#79)\n input0 155\n input1 48\n output0 157"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="12718,514",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1550 -> "Conv (op#79)\n input0 155\n input1 48\n output0 157"	 [pos="e,12672,542.34 12630,568.71 12639,562.75 12651,555.27 12663,547.78"];
+	"Conv (op#82)\n input0 155\n input1 50\n output0 161"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="12718,662",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1550 -> "Conv (op#82)\n input0 155\n input1 50\n output0 161"	 [pos="e,12672,627.98 12628,594.38 12638,601.97 12651,611.91 12664,621.83"];
+	1570	 [height=0.5,
+		label=157,
+		pos="12827,507",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#79)\n input0 155\n input1 48\n output0 157" -> 1570	 [pos="e,12800,508.71 12764,511.05 12773,510.49 12782,509.91 12790,509.37"];
+	480	 [height=0.5,
+		label=48,
+		pos="12609,514",
+		shape=octagon,
+		width=0.75];
+	480 -> "Conv (op#79)\n input0 155\n input1 48\n output0 157"	 [pos="e,12672,514 12636,514 12644,514 12653,514 12662,514"];
+	"Add (op#80)\n input0 157\n input1 49\n output0 158"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="12933,545",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1570 -> "Add (op#80)\n input0 157\n input1 49\n output0 158"	 [pos="e,12890,529.53 12852,515.81 12860,518.87 12870,522.43 12880,525.99"];
+	1580	 [height=0.5,
+		label=158,
+		pos="13039,552",
+		shape=octagon,
+		width=0.75];
+	"Add (op#80)\n input0 157\n input1 49\n output0 158" -> 1580	 [pos="e,13012,550.23 12976,547.83 12984,548.4 12993,548.99 13002,549.55"];
+	490	 [height=0.5,
+		label=49,
+		pos="12827,561",
+		shape=octagon,
+		width=0.75];
+	490 -> "Add (op#80)\n input0 157\n input1 49\n output0 158"	 [pos="e,12890,551.46 12854,556.96 12862,555.75 12871,554.38 12880,553.01"];
+	"Relu (op#81)\n input0 158\n output0 159"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(40): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="13146,554",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1580 -> "Relu (op#81)\n input0 158\n output0 159"	 [pos="e,13102,553.17 13066,552.49 13074,552.64 13083,552.81 13092,552.98"];
+	1590	 [height=0.5,
+		label=159,
+		pos="13254,563",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#81)\n input0 158\n output0 159" -> 1590	 [pos="e,13227,560.76 13191,557.71 13200,558.44 13208,559.2 13217,559.9"];
+	"Concat (op#85)\n input0 159\n input1 163\n output0 164"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(42): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/container.py(67): forward\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_\
+read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(241): forward\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/onnx/__init__.py(116): _export\n/home/\
+natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="13368,592",
+		shape=box,
+		style=filled,
+		width=1.4028];
+	1590 -> "Concat (op#85)\n input0 159\n input1 163\n output0 164"	 [pos="e,13317,579.09 13281,569.8 13289,571.84 13298,574.17 13307,576.53"];
+	1610	 [height=0.5,
+		label=161,
+		pos="12827,669",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#82)\n input0 155\n input1 50\n output0 161" -> 1610	 [pos="e,12800,667.29 12764,664.95 12773,665.51 12782,666.09 12790,666.63"];
+	500	 [height=0.5,
+		label=50,
+		pos="12609,662",
+		shape=octagon,
+		width=0.75];
+	500 -> "Conv (op#82)\n input0 155\n input1 50\n output0 161"	 [pos="e,12672,662 12636,662 12644,662 12653,662 12662,662"];
+	"Add (op#83)\n input0 161\n input1 51\n output0 162"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="12933,631",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1610 -> "Add (op#83)\n input0 161\n input1 51\n output0 162"	 [pos="e,12890,646.47 12852,660.19 12860,657.13 12870,653.57 12880,650.01"];
+	1620	 [height=0.5,
+		label=162,
+		pos="13039,630",
+		shape=octagon,
+		width=0.75];
+	"Add (op#83)\n input0 161\n input1 51\n output0 162" -> 1620	 [pos="e,13012,630.25 12976,630.6 12984,630.51 12993,630.43 13002,630.35"];
+	510	 [height=0.5,
+		label=51,
+		pos="12827,615",
+		shape=octagon,
+		width=0.75];
+	510 -> "Add (op#83)\n input0 161\n input1 51\n output0 162"	 [pos="e,12890,624.54 12854,619.04 12862,620.25 12871,621.62 12880,622.99"];
+	"Relu (op#84)\n input0 162\n output0 163"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(41): \
+forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/\
+site-packages/torch/nn/modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(\
+325): __call__\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(104): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="13146,626",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1620 -> "Relu (op#84)\n input0 162\n output0 163"	 [pos="e,13102,627.66 13066,629.01 13074,628.72 13083,628.38 13092,628.04"];
+	1630	 [height=0.5,
+		label=163,
+		pos="13254,621",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#84)\n input0 162\n output0 163" -> 1630	 [pos="e,13227,622.24 13191,623.94 13200,623.53 13208,623.11 13217,622.72"];
+	1630 -> "Concat (op#85)\n input0 159\n input1 163\n output0 164"	 [pos="e,13317,604.91 13281,614.2 13289,612.16 13298,609.83 13307,607.47"];
+	1640	 [height=0.5,
+		label=164,
+		pos="13481,592",
+		shape=octagon,
+		width=0.75];
+	"Concat (op#85)\n input0 159\n input1 163\n output0 164" -> 1640	 [pos="e,13454,592 13418,592 13427,592 13436,592 13444,592"];
+	"Dropout (op#86)\n input0 164\n output0 166\n output1 167"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="13598,592",
+		shape=box,
+		style=filled,
+		width=1.5];
+	1640 -> "Dropout (op#86)\n input0 164\n output0 166\n output1 167"	 [pos="e,13544,592 13508,592 13516,592 13525,592 13534,592"];
+	1660	 [height=0.5,
+		label=166,
+		pos="13715,619",
+		shape=octagon,
+		width=0.75];
+	"Dropout (op#86)\n input0 164\n output0 166\n output1 167" -> 1660	 [pos="e,13688,612.83 13652,604.47 13661,606.51 13670,608.58 13678,610.5"];
+	1670	 [height=0.5,
+		label=167,
+		pos="13715,565",
+		shape=octagon,
+		width=0.75];
+	"Dropout (op#86)\n input0 164\n output0 166\n output1 167" -> 1670	 [pos="e,13688,571.17 13652,579.53 13661,577.49 13670,575.42 13678,573.5"];
+	"Conv (op#87)\n input0 166\n input1 52\n output0 169"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="13824,646",
+		shape=box,
+		style=filled,
+		width=1.2778];
+	1660 -> "Conv (op#87)\n input0 166\n input1 52\n output0 169"	 [pos="e,13778,634.62 13742,625.6 13750,627.6 13759,629.87 13768,632.15"];
+	1690	 [height=0.5,
+		label=169,
+		pos="13933,646",
+		shape=octagon,
+		width=0.75];
+	"Conv (op#87)\n input0 166\n input1 52\n output0 169" -> 1690	 [pos="e,13906,646 13870,646 13879,646 13888,646 13896,646"];
+	520	 [height=0.5,
+		label=52,
+		pos="13715,673",
+		shape=octagon,
+		width=0.75];
+	520 -> "Conv (op#87)\n input0 166\n input1 52\n output0 169"	 [pos="e,13778,657.38 13742,666.4 13750,664.4 13759,662.13 13768,659.85"];
+	"Add (op#88)\n input0 169\n input1 53\n output0 170"	 [URL="javascript:alert('')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.94444,
+		pos="14039,673",
+		shape=box,
+		style=filled,
+		width=1.1944];
+	1690 -> "Add (op#88)\n input0 169\n input1 53\n output0 170"	 [pos="e,13996,662.09 13960,652.81 13968,654.88 13977,657.22 13986,659.56"];
+	1700	 [height=0.5,
+		label=170,
+		pos="14145,673",
+		shape=octagon,
+		width=0.75];
+	"Add (op#88)\n input0 169\n input1 53\n output0 170" -> 1700	 [pos="e,14118,673 14082,673 14090,673 14099,673 14108,673"];
+	530	 [height=0.5,
+		label=53,
+		pos="13933,700",
+		shape=octagon,
+		width=0.75];
+	530 -> "Add (op#88)\n input0 169\n input1 53\n output0 170"	 [pos="e,13996,683.91 13960,693.19 13968,691.12 13977,688.78 13986,686.44"];
+	"Relu (op#89)\n input0 170\n output0 171"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/activation.py(43): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/\
+modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(105): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/\
+module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/\
+anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/\
+jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/\
+onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="14252,673",
+		shape=box,
+		style=filled,
+		width=1.2361];
+	1700 -> "Relu (op#89)\n input0 170\n output0 171"	 [pos="e,14208,673 14172,673 14180,673 14189,673 14198,673"];
+	1710	 [height=0.5,
+		label=171,
+		pos="14360,673",
+		shape=octagon,
+		width=0.75];
+	"Relu (op#89)\n input0 170\n output0 171" -> 1710	 [pos="e,14333,673 14297,673 14306,673 14314,673 14323,673"];
+	"AveragePool (op#90)\n input0 171\n output0 172"	 [URL="javascript:alert('/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/pooling.py(505): forward\n/home/natu/anaconda3/\
+lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/\
+modules/container.py(67): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(105): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/\
+module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/home/natu/\
+anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/\
+jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/home/\
+natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/\
+onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="14490,673",
+		shape=box,
+		style=filled,
+		width=1.8611];
+	1710 -> "AveragePool (op#90)\n input0 171\n output0 172"	 [pos="e,14423,673 14387,673 14395,673 14404,673 14413,673"];
+	1720	 [height=0.5,
+		label=172,
+		pos="14620,673",
+		shape=octagon,
+		width=0.75];
+	"AveragePool (op#90)\n input0 171\n output0 172" -> 1720	 [pos="e,14593,673 14557,673 14566,673 14575,673 14583,673"];
+	"Reshape (op#91)\n input0 172\n output0 173"	 [URL="javascript:alert('/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(106): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/nn/modules/module.py(325): __call__\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(236): traced_inner\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(259): wrapper\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/jit/__init__.py(241): forward\n/home/natu/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py(325): __call__\n/\
+home/natu/anaconda3/lib/python3.6/site-packages/torch/jit/__init__.py(217): trace\n/home/natu/anaconda3/lib/python3.6/site-packages/\
+torch/onnx/__init__.py(116): _export\n/home/natu/myproj/study_ml/onnx/onnx_read/squiize.py(146): module\n')",
+		color="#0F9D58",
+		fontcolor="#FFFFFF",
+		height=0.73611,
+		pos="14738,673",
+		shape=box,
+		style=filled,
+		width=1.5139];
+	1720 -> "Reshape (op#91)\n input0 172\n output0 173"	 [pos="e,14683,673 14647,673 14655,673 14664,673 14672,673"];
+	1730	 [height=0.5,
+		label=173,
+		pos="14855,673",
+		shape=octagon,
+		width=0.75];
+	"Reshape (op#91)\n input0 172\n output0 173" -> 1730	 [pos="e,14828,673 14792,673 14801,673 14810,673 14818,673"];
+}
