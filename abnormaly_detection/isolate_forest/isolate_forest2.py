@@ -28,10 +28,9 @@ weights = [ 15, 16, 15, 16, 17, 15, 16, 17, 16, 16, 17, 17, 17, 18, 16, 16, 16, 
 heights_np = np.array(heights, dtype=np.float32).reshape(-1, 1)
 weights_np = np.array(weights, dtype=np.float32).reshape(-1, 1)
 # 2次元へ変換
-train_np = np.r_[heights_np, weights_np]
+train_np = np.c_[heights_np, weights_np]
 
 # 正常値からの学習
-
 # contamination が全データに含まれる異常値の割合。
 # データの中に10%の異常が含まれる場合、0.1を指定する。
 # 何も指定しないときは、contamination = 0.1
@@ -42,19 +41,37 @@ print("training finished.")
 # ----- ここで正常値からの学習終了 ------
 
 # 学習結果を使って異常値かどうかの判断
-
 # テスト用データ
 # テスト
-results = clf.predict(train_np)
+# results = clf.predict(train_np)
 
+
+# 身長と体重のペアを作る。次のグラフ描画で使用する。
+# 身長について90から120まで50個、体重については10から30までの50個。
+# 身長と体重の組み合わせは2500個
 xx, yy = np.meshgrid(np.linspace(90, 120, 50), np.linspace(10, 30, 50))
-Z = clf.decision_function(np.c_[xx.ravel(), yy.ravel()])
+
+# xx_yyの形は (2500, 2) 2500は身長と体重のペア、2が特徴量（身長、体重）
+xx_yy = np.c_[xx.ravel(), yy.ravel()]
+# 身長、体重の組み合わせについて、全ての異常値を計算して、グラフに表示する。
+Z = clf.decision_function(xx_yy)
 Z = Z.reshape(xx.shape)
 
 plt.title("IsolationForest")
 plt.contourf(xx, yy, Z, cmap=plt.cm.Blues_r)
+plt.savefig('plot2d.png')
 plt.show()
-print(results)
 
+# ある身長と体重の組み合わせが以上かどうか判断
+test_data = [[100, 25],   [110, 25],  [120, 25]]
 
+data = np.array(test_data)
+results = clf.predict(data)
 
+for d, r in zip(test_data, results):
+    if r == 1:
+        judge = '正常'
+    else:
+        judge = '異常'
+
+    print("判定 %s, 身長 %d, 体重 %d" % (judge, d[0], d[1]))
