@@ -4,3 +4,5 @@ etc/.idea/*
 IADML/.idea/*
 IADML/chap2/.ipynb_checkpoints/*
 IADML/chap7/.ipynb_checkpoints/*
+.idea/*.xml
+.idea/study_ml.iml
