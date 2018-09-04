@@ -12,7 +12,7 @@ fn calc_k(pi:&Pi, i:u32, n:u32) -> u32 {
     let diff = &g0 - &g1;
     match diff.into_iter().min() {
         Some(k) => k,
-        _ => 0
+        _ => panic!("error in calc_k")
     }   
 }
 
@@ -55,4 +55,6 @@ fn main() {
     let ret = enumlation(4);
     println!("len = {}", ret.len());
     println!("{:?}", ret);
+
+    
 }
