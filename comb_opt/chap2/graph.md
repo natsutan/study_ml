@@ -9,3 +9,7 @@ $\Psi:E\Rightarrow\{X\subset V: |X| = 2\}$
 
 $\Psi:E\Rightarrow\{(v,w)\subset V \times V: v \neq w\}$
 
+Vは頂点(vertex, point)、Eは辺(Edge)
+
+参考
+https://boostjp.github.io/archive/boost_docs/libs/graph/graph_theory_review.html
