@@ -9,3 +9,5 @@ IADML/chap7/.ipynb_checkpoints/*
 *.rs~
 comb_opt/chap1/path_enum/target/*
 *.lock
+sk_tf/.idea/*
+sk_tf/chap9/first/target/*
