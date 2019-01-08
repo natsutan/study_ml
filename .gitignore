@@ -11,3 +11,6 @@ comb_opt/chap1/path_enum/target/*
 *.lock
 sk_tf/.idea/*
 sk_tf/chap9/first/target/*
+tensorflow_image/chap2/logs/
+tensorflow_image/chap2/MNIST_data/
+tensorflow_image/chap2/tmp/

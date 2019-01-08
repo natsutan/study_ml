@@ -1,7 +1,0 @@
-[package]
-name = "first"
-version = "0.1.0"
-authors = ["natsutan <YRW03704@nifty.com>"]
-
-[dependencies]
-tensorflow = "0.11.0"
