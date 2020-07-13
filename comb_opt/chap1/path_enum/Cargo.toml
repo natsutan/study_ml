@@ -1,6 +1,0 @@
-[package]
-name = "path_enum"
-version = "0.1.0"
-authors = ["natsutan <YRW03704@nifty.com>"]
-
-[dependencies]
