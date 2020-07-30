@@ -5,3 +5,4 @@ IADML/chap7/.ipynb_checkpoints/*
 .idea/
 ap_timeseries/chap1/.ipynb_checkpoints/
 ap_timeseries/chap2/.ipynb_checkpoints/
+ap_timeseries/chap3/3.2.2_kalman_filter_seasonal.ipynb
