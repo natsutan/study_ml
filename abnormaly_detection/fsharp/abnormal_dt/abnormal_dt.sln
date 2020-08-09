@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "abnormal_dt", "abnormal_dt.fsproj", "{F7EEFDF9-4DCB-402D-92DB-799FC1D936DB}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Hotelling", "..\Hotelling\Hotelling.fsproj", "{671E6071-49CF-4360-B2E3-4C28B4D80B3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7EEFDF9-4DCB-402D-92DB-799FC1D936DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7EEFDF9-4DCB-402D-92DB-799FC1D936DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7EEFDF9-4DCB-402D-92DB-799FC1D936DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7EEFDF9-4DCB-402D-92DB-799FC1D936DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671E6071-49CF-4360-B2E3-4C28B4D80B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671E6071-49CF-4360-B2E3-4C28B4D80B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671E6071-49CF-4360-B2E3-4C28B4D80B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671E6071-49CF-4360-B2E3-4C28B4D80B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {599A94A9-0845-46D3-83D9-104AE1F54BF7}
+	EndGlobalSection
+EndGlobal
