@@ -13,5 +13,13 @@ abnormaly_detection/fsharp/abnormal_dt/obj/
 abnormaly_detection/fsharp/Hotelling/bin/
 abnormaly_detection/fsharp/Hotelling/packages/
 abnormaly_detection/fsharp/Hotelling/obj/
+abnormaly_detection/fsharp/abnormal_data/.vs/
+abnormaly_detection/fsharp/abnormal_data/bin/
+abnormaly_detection/fsharp/abnormal_data/packages/
+abnormaly_detection/fsharp/abnormal_data/obj/
+abnormaly_detection/fsharp/eval/bin/
+abnormaly_detection/fsharp/eval/packages/
+abnormaly_detection/fsharp/eval/obj
+
 
 

@@ -7,6 +7,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "abnormal_dt", "abnormal_dt.
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Hotelling", "..\Hotelling\Hotelling.fsproj", "{671E6071-49CF-4360-B2E3-4C28B4D80B3D}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "abnormal_data", "..\abnormal_data\abnormal_data.fsproj", "{A9BBD83D-0F3D-42A1-8427-FF685E17FFF5}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "eval", "..\eval\eval.fsproj", "{51F68D34-C6D5-46CD-B108-13840CD58722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{671E6071-49CF-4360-B2E3-4C28B4D80B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{671E6071-49CF-4360-B2E3-4C28B4D80B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{671E6071-49CF-4360-B2E3-4C28B4D80B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9BBD83D-0F3D-42A1-8427-FF685E17FFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BBD83D-0F3D-42A1-8427-FF685E17FFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BBD83D-0F3D-42A1-8427-FF685E17FFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BBD83D-0F3D-42A1-8427-FF685E17FFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F68D34-C6D5-46CD-B108-13840CD58722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F68D34-C6D5-46CD-B108-13840CD58722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F68D34-C6D5-46CD-B108-13840CD58722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F68D34-C6D5-46CD-B108-13840CD58722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
