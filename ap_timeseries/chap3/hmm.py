@@ -5,7 +5,8 @@ import pandas as pd
 import io
 from hmmlearn.hmm import GaussianHMM
 
-table_file = "C:/home/myproj/study_ml/ap_timeseries/chap3/ew_excs.prn.txt"
+#table_file = "d:/home/myproj/study_ml/ap_timeseries/chap3/ew_excs.prn.txt"
+table_file = "D:/myproj/study_ml/ap_timeseries/chap3/ew_excs.prn.txt"
 raw = pd.read_table(table_file, header=None, engine='python', skipfooter=1)
 raw.index = pd.date_range('1926-01-01', '1995-12-01', freq='MS')
 quotes = raw.loc[:'1986'] - raw.loc[:'1986'].mean()
